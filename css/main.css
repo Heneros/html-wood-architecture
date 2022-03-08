@@ -1,0 +1,117 @@
+/* USER VARIABLES SECTION */
+
+:root {
+	--accent: #F88500;
+
+	--accent-light: #ff8d09;
+	--accent-dark: #f38506;
+
+	--gutter: 20px;
+	--text: #333;
+	--dark: #202328;
+	--deep: #171A1A;
+	--dark-header: #6F7A8B;
+	--dark-div: #2D3038;
+	--light-bg: #FAFAFA;
+	--light-disabled: #E4E6E8;
+	--light-div: #E7E7E8;
+	--middle-gray: rgba(111, 122, 139, 0.75);
+	--text-light: #999999;
+	--regular-text: 16px;
+	--small-text: 14px;
+	--lineheight: 1.75;
+	--userfont: raleway-wt, sans-serif;
+	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+	--radius: 5px;
+	--radius-style: 0 5px;
+	--transition: .25s ease-out;
+	--address: #989DA5;
+}
+
+/* BOOTSTRAP SETTINGS SECTION */
+
+/* gutter 20px (10px + 10px). Comment this code for default gutter start at 1.5rem (24px) wide. */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { --bs-gutter-x: .625rem; }
+.row, .row > * { --bs-gutter-x: 1.25rem; }
+
+/* FONTS LOAD SECTION */
+
+@font-face { src: url("../fonts/raleway/raleway-v22-cyrillic-300.woff2") format("woff2"); font-family: "raleway-wt"; font-weight: 300; font-style: normal; }
+@font-face { src: url("../fonts/raleway/raleway-v22-cyrillic-500.woff2") format("woff2"); font-family: "raleway-wt"; font-weight: 500; font-style: normal; }
+@font-face { src: url("../fonts/raleway/raleway-v22-cyrillic-600.woff2") format("woff2"); font-family: "raleway-wt"; font-weight: 600; font-style: normal; }
+@font-face { src: url("../fonts/raleway/raleway-v22-cyrillic-700.woff2") format("woff2"); font-family: "raleway-wt"; font-weight: 700; font-style: normal; }
+@font-face { src: url("../fonts/raleway/raleway-v22-cyrillic-800.woff2") format("woff2"); font-family: "raleway-wt"; font-weight: 800; font-style: normal; }
+@font-face { src: url("../fonts/raleway/raleway-v22-cyrillic-900.woff2") format("woff2"); font-family: "raleway-wt"; font-weight: 900; font-style: normal; }
+@font-face { src: url("../fonts/raleway/raleway-v22-cyrillic-regular.woff2") format("woff2"); font-family: "raleway-wt"; font-weight: 400; font-style: normal; }
+
+@font-face { src: url("../fonts/roboto/roboto-v29-cyrillic-300.woff2") format("woff2"); font-family: "roboto-wt"; font-weight: 300; font-style: normal; }
+@font-face { src: url("../fonts/roboto/roboto-v29-cyrillic-500.woff2") format("woff2"); font-family: "roboto-wt"; font-weight: 500; font-style: normal; }
+@font-face { src: url("../fonts/roboto/roboto-v29-cyrillic-700.woff2") format("woff2"); font-family: "roboto-wt"; font-weight: 700; font-style: normal; }
+
+/* GENERAL CSS SETTINGS */
+
+::placeholder { color: #666; }
+::selection { background-color: var(--accent); color: #fff; }
+input, textarea { outline: none; }
+input:focus:required:invalid, textarea:focus:required:invalid { border-color: red; }
+input:required:valid, textarea:required:valid { border-color: green; }
+
+body {
+	font-family: var(--userfont);
+	font-size: var(--regular-text);
+	line-height: var(--lineheight);
+	color: var(--text);
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+}
+.navbar{
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+	color: #fff;
+	padding: 40px 0 27px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	left: 50px;
+	right: 50px;
+}
+.logo{
+	font-size: 17px;
+	white-space: nowrap;
+	line-height: 1.2;
+}
+.logo__link{
+    color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: .75px;
+	text-decoration: none;
+}
+.logo__link span {
+	display: block;
+	font-size: 12px;
+	text-transform: none;
+	font-weight: 300;
+	letter-spacing: 3.4px;
+	opacity: 0.45;
+	margin-left: 22px;
+}
+.logo__link i {
+	width: 15px;
+	height: 15px;
+	position: relative;
+	border: 2px solid var(--accent);
+	display: inline-block;
+	border-radius: var(--radius-style);
+	margin-right: 7px;
+}
+.home-slider{
+	position: relative;
+	height: 100vh;
+	color: #fff;
+	background-color: var(--dark);
+}
+
+.logo__link:hover, .logo__link:focus, .logo__link:active{
+	
+}
