@@ -216,3 +216,26 @@ span.top-menu__link{
 	box-shadow: 0 0 0 30px var(--dark);
 	border-radius: var(--radius);
 }
+.home-slider__heading{
+	font-size: 58px;
+	line-height: .8;
+	font-weight: 300;
+	margin-bottom: 35px;
+}
+.home-slider__heading span{
+  font-size: 16px;
+  background-color: var(--accent);
+  border-radius: var(--radius-styles);
+  padding: 6px 16px 7px;
+  font-weight: 500;
+}
+.home-slider__text{
+	max-width: 440px;
+	font-size: var(--small-text);
+	background-color: rgba(32, 35, 40, 0.9);
+	padding: 15px 22px;
+	border-radius: 0 сфдс(var(--border) * 2);
+}
+.home-slider__slide .container{
+	z-index: 2;
+}

@@ -1,5 +1,11 @@
 document.addEventListener('DOMContentLoaded', function(){
     
+    $('.home-slider__heading').each(function(){
+        let text = $(this).text().split(' '),
+        first = text.shift()
+        $(this).html(`${first} <br><span>${text.join(' ')}</span`)
+    })
+
     function toggleMenu(){
         $('.menu-toggle').toggleClass('menu-toggle_active');
         $('.top-menu').toggleClass('top-menu_active')
