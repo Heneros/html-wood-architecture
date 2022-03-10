@@ -271,3 +271,38 @@ span.top-menu__link{
 	font-size: 12px;
 	color: #59606C;
 }
+.home-slider__bottom .swiper-scrollbar-drag{
+	height: 5px;
+}
+.home-slider__pagination-wrapper {
+	position: relative;
+}
+.home-slider__nav{
+	position: relative;
+}
+.home-slider__pagination{
+	font-family: roboto-wt, sans-serif;
+	font-weight: 300;
+	bottom: inherit;
+	margin-top: -10px;
+}
+.home-slider__pagination span{
+	width: 1px;
+	height: 28px;
+	background-color: #353941;
+	display: inline-block;
+	vertical-align: middle;
+	margin: -3px 8px 0;
+}
+.home-slider__pagination b{
+	position: relative;
+	font-size: 15px;
+	color: #818B9D;
+	font-weight: 300;
+}
+.home-slider__prev, .home-slider__next{
+	outline: none;
+}
+.home-slider__prev::after, .home-slider__next::after{
+	font-size: 14px;
+}
