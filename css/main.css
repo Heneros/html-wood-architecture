@@ -186,6 +186,8 @@ span.top-menu__link{
 .home-slider{
 	position: relative;
 	height: 100vh;
+	min-height: 580px;
+	max-height: 720px;
 	color: #fff;
 	background-color: var(--dark);
 }

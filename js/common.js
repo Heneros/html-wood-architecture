@@ -39,6 +39,15 @@ document.addEventListener('DOMContentLoaded', function(){
             el: '.home-slider__scrollbar',
             draggable: true
         },
+        navigation:{
+            prevEl: '.home-slider__prev',
+            nextEl: '.home-slider__next'
+        },
+        keyboard:{
+            enabled: true,
+            onlyViewport: false
+        },
+        runCallbacksOnInit: false
     })
 
 });
