@@ -48,6 +48,10 @@ document.addEventListener('DOMContentLoaded', function(){
             onlyViewport: false
         },
         runCallbacksOnInit: false
+    });
+
+    $('.home-callback__list li').each(function(){
+        $(this).html($(this).text().replace(/([0-9.]+)/g, '<span>$1</span>'))
     })
 
 });
