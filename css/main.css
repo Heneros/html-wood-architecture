@@ -435,3 +435,52 @@ form input, form textarea{
 	border-radius: var(--radius-style);
 	border: 1px solid var(--light-div);
 }
+
+.best-works {
+	background-color: var(--light-bg);
+}
+
+.best-works__top{
+	background-color: var(--dark);
+	color: #fff;
+	padding-top: 65px;
+	padding-bottom: 170px;
+}
+.best-works__top-wrapper{
+	display: flex;
+	align-items: center;
+}
+
+.best-works__left,
+.best-works__right{
+	flex: 0 0 50%;
+	margin-bottom: 20px;
+}
+
+.best-works__left{
+	font-size: var(--small-text);
+	text-align: right;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-right: var(--dark-div) 1px solid;
+}
+
+.best-works__right{
+	padding-left: 40px;
+}
+
+.section-title__name{
+	color: var(--accent);
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.section-title__name::before{
+	content: '\\\\';
+    margin-right: 5px;
+}
+.section-title__desc{
+	line-height: 1.2;
+	font-size: 29px;
+}
