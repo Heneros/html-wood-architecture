@@ -454,20 +454,28 @@ form input, form textarea{
 .best-works__left,
 .best-works__right{
 	flex: 0 0 50%;
-	margin-bottom: 20px;
+	margin-bottom: var(--guttern);
 }
 
 .best-works__left{
 	font-size: var(--small-text);
 	text-align: right;
-	padding-right: 30px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-right: 40px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	border-right: var(--dark-div) 1px solid;
 }
 
 .best-works__right{
 	padding-left: 40px;
+}
+.best-works__bottom{
+	margin-top: -120px;
+	padding-bottom: 65px;
+}
+.best-works__item-wrapper{
+	overflow: hidden;
+	
 }
 
 .section-title__name{
@@ -483,4 +491,28 @@ form input, form textarea{
 .section-title__desc{
 	line-height: 1.2;
 	font-size: 29px;
+	margin: 0;
+	margin-top: 5px;
+	font-weight: 800;
+}
+.best-item{
+	background-color: #fff;
+	display: block;
+	height: 100%;
+	text-decoration: none;
+	border-bottom: 3px solid var(--light-disabled);
+	transition: border var(--transition);
+	color: var(--text);
+}
+
+.best-item:hover{
+	border-color: var(--accent);
+	color: var(--text);
+	text-decoration: none;
+}
+.best-item__img-wrapper{
+	position: relative;
+}
+.best-item__img-wrapper img{
+	width: 100%;
 }
