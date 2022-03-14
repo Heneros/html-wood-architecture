@@ -117,13 +117,30 @@
 				<p>Позвоните нам или оставьте заявку с сайта. <br>
 					Мы перезвоним вам в течение 10 минут.</p>
 					<a href="tel:+74992467532" class="phone-big home-callback__phone" title="Позвонить">+7 (499) 246-75-32</a>
-			          <button class="button home-callback__button">Оформить заявку сейчас</button>
+			          <button class="button home-callback__button" data-custom-open="modal" >Оформить заявку сейчас</button>
 				</div>
 		</div>
 	</div>
 </div>
 
-
+<div class="modal micromodal-slide" id="modal">
+	<div class="modal__overlay" data-custom-close>
+		<div class="modal__container">
+			<header class="modal__header">
+				<h2 class="modal__title">Оформить заявку</h2>
+				<button class="modal__close" title="Закрыть" data-custom-close></button>
+			</header>
+			<form action="">
+				<input type="text" name="Имя" placeholder="Ваше имя...">
+				<input type="tel" name="телефон" placeholder="Ваше телефон...">
+				<textarea name="Комментарий" rows="4" placeholder="Комментарий"></textarea>
+				<div class="modal__footer">
+					<button class="button">Отправить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
 
 	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
 	<script src="libs/swiper/swiper-bundle.min.js"></script>
