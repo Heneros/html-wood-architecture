@@ -13,7 +13,9 @@
     .top-menu__link{
         padding: 7.5px 15px;
      }
-
+     .home-callback__list > * {
+         width: 49%;
+     }
 }
 
 /* md <= Large (lg) */
@@ -50,6 +52,16 @@
     }
     .menu-toggle{
         display: block;
+    }
+    .home-callback__list,
+    .home-callback__header{
+        display: none;
+    }
+    .home-callback__text-right{
+        text-align: center;
+    }
+    .home-callback__phone{
+         display: block;
     }
 
 }
