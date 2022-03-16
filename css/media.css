@@ -63,6 +63,13 @@
     .home-callback__phone{
          display: block;
     }
+    .best-item__desc{
+        font-size: 16px;
+    }
+    .best-works__top{
+        padding-top: 40px;
+        padding-bottom: 155px;
+    }
 
 }
 
@@ -92,9 +99,22 @@
 }
 
 /* Medium (md) */
-@media (min-width : 768px) {
-
+@media (min-width : 768px) { 
+   .best-works__left{
+       display: none;
+   }
+   .best-works__right{
+       flex: 1;
+       margin: 0;
+       padding: 0;
+   }
+   .best-item__desc{
+    font-size: 20px;
 }
+.best-works__botton-wrapper	{
+    margin-top: 15px;
+}
+} 
 
 /* Large (lg) */
 @media (min-width : 992px) {

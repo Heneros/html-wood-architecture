@@ -504,15 +504,101 @@ form input, form textarea{
 	transition: border var(--transition);
 	color: var(--text);
 }
-
-.best-item:hover{
-	border-color: var(--accent);
-	color: var(--text);
-	text-decoration: none;
-}
 .best-item__img-wrapper{
 	position: relative;
 }
 .best-item__img-wrapper img{
 	width: 100%;
+}
+.best-item__content{
+	padding: 25px;
+}
+.best-item__desc{
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.28;
+	position: relative;
+	padding-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.best-item__desc::before,
+.best-item__desc::after{
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 0;
+   height: 100%;
+   width: 10px;
+   background-image: url('../images/interface/ellipse-accent.svg');
+   background-repeat: repeat-y;
+   background-position: 3px 9.5px;
+}
+.best-item__desc::after{
+	background-image: url('../images/interface/ellipse-gray.svg');
+	transition: opacity .5s ease-out;
+}
+.best-item:hover .best-item__desc::after{
+	opacity: 0;
+}
+.best-item:hover .best-item__desc{
+	text-decoration: underline;
+}
+.best-item__img-wrapper::before,
+.best-item__img-wrapper::after{
+	content: '';
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	background-image: url('../images/interface/triangle-white.svg');
+	background-position: 20px 20px;
+	background-repeat: no-repeat;
+	opacity: 0;
+	transition: opacity .5s ease-out, background-position .5s ease-out;
+}
+.best-item__img-wrapper::before{
+	background-color:  rgba(32, 35, 40, 0.25);
+}
+.best-item__img-wrapper::after{
+  transform: rotate(180deg);
+}
+.best-item:hover{
+	border-color: var(--accent);
+	color: var(--text);
+	text-decoration: none;
+}
+
+.best-item:hover .best-item__img-wrapper::before,
+.best-item:hover .best-item__img-wrapper::after{
+  opacity: 1;
+  background-position: 20px 20px;
+}
+
+.address-line{
+	color: var(--address);
+	font-size: var(--small-text);
+	font-weight: 700;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.address-line::before{
+    content: "";
+	display: inline-block;
+	width: 12px;
+	height: 16px;
+	background-image: url('../images/interface/mapmarker.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 8px;
+	position: relative;
+	top: 1.4px;
+}
+
+.best-works__botton-wrapper	{
+	text-align: center;
+	margin-top: 25px;
 }
