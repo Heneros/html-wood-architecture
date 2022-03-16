@@ -636,10 +636,16 @@ form input, form textarea{
 
 .advantages-slider__caption{
 	position: absolute;
-	bottom: 0;
+	bottom: 60px;
 	z-index: 1;
 	color: #fff;
 	right: -25px;
+	padding: 2px 50px 2px 25px;
+	border-radius: var(--radius-style);
+	font-family: roboto-wt, sans-serif;
+	font-weight: 700;
+	font-size: 52px;
+	overflow: hidden;
 }
 .advantages-slider__caption::before{
 	content: "";
@@ -649,4 +655,26 @@ form input, form textarea{
 	left: 0;
 	right: 0;
 	background-color: var(--dark);
+	opacity: .9;
+	z-index: -1;
+}
+.advantages-slider__caption span{
+	font-size: 21px;
+	font-family: raleway-wt, sans-serif;
+	font-weight: 300;
+	max-width: 100px;
+	display: inline-block;
+	line-height: 1.2;
+	text-align: left;
+	padding-left: 2px;
+}
+
+.section-title__paragraph{
+   font-size: var(--small-text);
+   margin: 0;
+   margin-bottom: 40px;
+}
+
+.section-title--dotted .section-title__desc{
+	margin-bottom: 25px;
 }
