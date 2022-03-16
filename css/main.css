@@ -602,3 +602,51 @@ form input, form textarea{
 	text-align: center;
 	margin-top: 25px;
 }
+
+.advantages{
+	padding: 80px 0 50px;
+}
+
+.advantages-slider-wrapper{
+	text-align: center;
+}
+.advantages-slider{
+   width: 100%;
+   position: relative;
+   display: inline-block;
+   max-width: 440px;
+}
+
+.advantages-slider img {
+   width: 100%;
+   border-radius: var(--radius-styles);
+}
+
+.advantages-slider::before{
+	content: "";
+	width: 50%;
+	height: 50%;
+	top: -15px;
+	left: -15px;
+	background-color: var(--dark);
+	position: absolute;
+	border-radius: var(--radius-style);
+	opacity: 0.1;
+}
+
+.advantages-slider__caption{
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+	color: #fff;
+	right: -25px;
+}
+.advantages-slider__caption::before{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: var(--dark);
+}

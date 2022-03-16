@@ -75,7 +75,9 @@
 
 /* sm <= Medium (md) */
 @media (max-width : 768px) {
-
+    .best-works__left{
+        display: none;
+    }
 }
 
 /* xs <= Small (sm) */
@@ -100,9 +102,7 @@
 
 /* Medium (md) */
 @media (min-width : 768px) { 
-   .best-works__left{
-       display: none;
-   }
+
    .best-works__right{
        flex: 1;
        margin: 0;

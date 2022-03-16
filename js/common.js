@@ -71,6 +71,16 @@ document.addEventListener('DOMContentLoaded', function(){
 
     $('.home-callback__list li').each(function(){
         $(this).html($(this).text().replace(/([0-9.]+)/g, '<span>$1</span>'))
+    });
+
+    const advSlider = new Swiper('.advantages-slider', {
+        effect: 'fade',
+        speed: 800,
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false
+        }
+
     })
 
 });
