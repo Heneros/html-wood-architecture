@@ -678,3 +678,15 @@ form input, form textarea{
 .section-title--dotted .section-title__desc{
 	margin-bottom: 25px;
 }
+.section-title--dotted .section-title__desc::after{
+	content: "";
+	display: block;
+	height: 5px;
+	width: 40px;
+	background-image: url('../images/interface/ellipse-accent.svg');
+	background-repeat: repeat-x;
+	margin-top: 28px;
+}
+.advantages__item-wrapper{
+
+}
