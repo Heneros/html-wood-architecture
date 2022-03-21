@@ -1,18 +1,23 @@
-const gulp = require('gulp');
-const browserSync = require('browser-sync').create();
-const plumber = require('gulp-plumber')
-const sass = require("gulp-sass")(require("node-sass"))
-const imagemin = require('gulp-imagemin');
-const recompress = require('imagemin-jpeg-recompress');
-const pngquant = require('imagemin-pngquant');
-const changed = require('gulp-changed');
-const prefixer = require('gulp-autoprefixer');
+import gulp from 'gulp';
+import browserSync from 'browser-sync';
+import plumber from 'gulp-plumber';
+import gulpSass from "gulp-sass";
+import nodeSass from "node-sass";
+const sass = gulpSass(nodeSass);
 
+import imagemin from'gulp-imagemin';
+import recompress from'imagemin-jpeg-recompress';
+import pngquant from'imagemin-pngquant';
+import changed from'gulp-changed';
+import prefixer from'gulp-autoprefixer';
+import babel from 'gulp-babel';
+import uglify  from 'gulp-uglify';
+import concat  from 'gulp-concat';
+import bulk from 'gulp-sass-bulk-importer';
+import optipng from 'optipng-bin';
 
-
-
-gulp.task('serve', () => {
-    browserSync.init({
+gulp.task('serve', function ()  {
+   return browserSync.init({
         server: {
             baseDir: "./build"
         }
@@ -25,50 +30,54 @@ gulp.task('serve', () => {
 const scripts = [
    "node_modules/jquery/dist/jquery.min.js",
    "node_modules/swiper/swiper-bundle.min.js",
-   "node_modules/micromodal/dist/micromodal.min.js"
+   "node_modules/micromodal/dist/micromodal.min.js",
+   "src/js/script.js"
 ];
 
 const styles = [
-    "src/sass/style.scss",
-    "node_modules/swiper/swiper.min.css",
+    "src/scss/style.scss",
+    "node_modules/swiper/swiper-bundle.css",
     "node_modules/bootstrap/dist/css/bootstrap-grid.min.css",
     "node_modules/bootstrap/dist/css/bootstrap-reboot.min.css",
 ];
 
-gulp.task('html', () =>{
-    gulp.src('src/**/*.html' )
+gulp.task('html', function () {
+  return  gulp.src('src/**/*.html' )
     .pipe(gulp.dest('build/'))
     .pipe(browserSync.reload({stream: true}));
 });
 
 
-gulp.task('images', () => {
-    gulp.src('src/img/**/*.+(png|jpg|jpeg|gif|svg|ico)')
-    .pipe(changed('build/img'))
+gulp.task('images', function ()  {
+      return gulp.src('src/images/**/*.+(png|jpg|jpeg|gif|svg|ico)')
+    .pipe(plumber())
+    .pipe(changed('build/images'))
     .pipe(imagemin({
-        interlaced: true,
-        progressive: true,
-        optimizationLevel: 5,
-    },[
-        recompress({
-            loops: 6,
-            min: 50,
-            max: 90,
-            quality: 'high',
-            use: [pngquant({
-                quality: [0.8, 1],
-                strip: true,
-                speed: 1
-            })],
-        }),
-        imagemin.gifsicle(),
-        imagemin.optipng(),
-    ], ), )
-    .pipe(gulp.dest('build/img'))
+            interlaced: true,
+            progressive: true,
+            optimizationLevel: 5,
+        },
+        [
+            recompress({
+                loops: 6,
+                min: 50,
+                max: 90,
+                quality: 'high',
+                use: [pngquant({
+                    quality: [0.8, 1],
+                    strip: true,
+                    speed: 1
+                })],
+            }),
+            imagemin.gifsicle(),
+            imagemin.optipng(),
+            // imagemin.svgo()
+        ], ), )
+    .pipe(gulp.dest('build/images'))
 });
 
-gulp.task('sass',  () => {
-     gulp.src(cssFiles)
+gulp.task('sass', function ()  {
+    return gulp.src(styles)
         .pipe(plumber())
         .pipe(sass())
         .pipe(bulk())
@@ -103,12 +112,12 @@ gulp.task('js', function(){
     
 gulp.task('watch', function(){
     gulp.watch('src/*.html', gulp.series('html')),
-    gulp.watch(cssFiles, gulp.series("sass"), browserSync.reload),
+    gulp.watch(styles, gulp.series("sass"), browserSync.reload),
     gulp.watch(scripts, gulp.series('js')),
-    gulp.watch("src/img/**/*.{png,jpg}", gulp.series("images"))
+    gulp.watch('src/images/**/*.+(png|jpg|jpeg|gif|svg|ico)', gulp.series("images"))
   });
   
   gulp.task('default', gulp.series(
-    gulp.parallel('html','js', 'sass', 'images', ),
+    gulp.parallel('html','images', 'sass',  'js'  ),
     gulp.parallel('watch', 'serve' )
   ));

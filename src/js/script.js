@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function(){
     $(document).click(function(e){
         if($(e.target).closest('.menu-container').length) return closeMenu;
     })
-    
+      
     const homeSlider = new Swiper('.home-slider', {
         speed: 800,
         effect: 'fade',
