@@ -28,9 +28,10 @@ gulp.task('serve', function ()  {
 
 
 const scripts = [
+    "node_modules/micromodal/dist/micromodal.min.js",
    "node_modules/jquery/dist/jquery.min.js",
    "node_modules/swiper/swiper-bundle.min.js",
-   "node_modules/micromodal/dist/micromodal.min.js",
+
    "src/js/script.js"
 ];
 
@@ -80,7 +81,7 @@ gulp.task('sass', function ()  {
     return gulp.src(styles)
         .pipe(plumber())
         .pipe(sass())
-        .pipe(bulk())
+        // .pipe(bulk())
         .pipe(prefixer({
 			overrideBrowserslist: ['last 8 versions'],
 			browsers: [
