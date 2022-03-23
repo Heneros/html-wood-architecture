@@ -127,90 +127,14 @@
 	font-size: 14px;
 }
 
-.home-callback{
-	background-color: $deep;
-	padding: 50px 0;
-	color: $dark-header;
-	position: relative;
-	z-index: 1;
-}
-.home-callback__header{
-	font-size: 18px;
-	font-weight: 900;
-	text-transform: uppercase;
-	margin-bottom: 30px;
-	position: relative;
-}
-.home-callback__header::after{
-	content: "";
-	width: 30%;
-	height: 1px;
-	background-color: $dark-div;
-	position: absolute;
-	left: 0;
-	bottom: -15px;
-}
-.home-callback__list{
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	font-size: $small-text;
-}
-.home-callback__list > *{
-	display: inline-block;
-	width: 32%;
-	margin-bottom: 7px;
-}
-.home-callback__list span{
-	font-family: roboto-wt, sans-serif;
-	font-weight: 700;
-}
-.home-callback__text-right{
-    text-align: right;
-}
-.home-callback__text-right p{
-	font-size: $small-text;
-	line-height: 1.65;
-}
-.phone-big{
-	font-size: 28px;
-	line-height: 1.65;
-	color: $text;
-	font-weight: 300;
-	font-family: roboto-wt, sans-serif;
-	text-decoration: none;
-}
-.phone-big{
-	color: $text;
-}
-.home-callback__phone,
-.home-callback__phone:hover{
-	color: #fff;
-}
-.button{
-	outline: none;
-	border: none;
-	background-color: $accent;
-	color: #fff;
-	border-radius: $radius-style;
-	display: inline-block;
-	padding: 10px 28px;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 14px;
-	position: relative;
-	letter-spacing: .25px;
-	text-decoration: none;
-}
-.button:hover{
-	color: #fff;
-	text-decoration: none;
-	background-color: $accent-light;
-}
-.button:active{
-	background-color: $accent-dark;
-}
 
-.home-callback__button {
-	margin-top: 20px;
-}
+
+
+
+@media (max-width : 576px) {
+	.home-slider__heading{
+		font-size: 40px;
+	}
+
+ }
+ 
