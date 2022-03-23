@@ -9,16 +9,46 @@
         color: #fff;
         padding-top: 78px;
     }
+    .our__partners-items{
+        margin: 57px 0;
+        display: flex;
+    }
     .item__our-partner{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: relative ;
+        .image__block{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 22px;
+            img{
+                max-width: 156px;
+                height: 55px;
+                object-fit: fill;
+            }
+        }
         .description__item-partner{
             font-size: 14px;
             line-height: 23.8px;
             font-weight: 400;
+            text-align: center;
+        }
+        .company__name-partner{
+            color: $accent;
+            font-weight: 800;
         }
     }
 
+}
+
+@media(max-width: 765px){
+    .our__partners .our__partners-items{
+        flex-direction: column;
+        align-items: center;
+    }
+    .our__partners .item__our-partner{
+        margin: 25px 0;
+    }
 }
