@@ -10,6 +10,33 @@ text-align: center;
 padding-bottom: 45px; 
 }
 .all__posts{
-  
+  position: relative;
+         
 }
+.slider__blog-home {
+    display: flex;     
+    // z-index: 0;
+    // max-width: 450px;  
+    overflow: hidden;
+    .swiper-wrapper{    
+
+      box-sizing: border-box;
+width: 100%;   
+// overflow: hidden;
+      .swiper-slide{
+        // z-index: -1;
+      }
+      .swiper__blog-pagination{
+        background-color: red !important;
+      }
+
+    }
+} 
+.slider__blog{
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  max-width: 740px;
+}
+
 }

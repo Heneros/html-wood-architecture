@@ -73,6 +73,9 @@ document.addEventListener('DOMContentLoaded', function(){
         $(this).html($(this).text().replace(/([0-9.]+)/g, '<span>$1</span>'))
     });
 
+
+
+
     const advSlider = new Swiper('.advantages-slider', {
         effect: 'fade',
         speed: 800,
@@ -82,5 +85,19 @@ document.addEventListener('DOMContentLoaded', function(){
         }
 
     })
+
+    const blogSlider = new Swiper('.slider__blog', {
+        speed: 400,
+        slidesPerView: 2,
+        // slidesPerView: "auto",
+        spaceBetween: 20,   
+        grabCursor: true,
+        pagination: {
+            el: ".blog-slider__pagination"
+          },
+ 
+  
+ 
+    });
 
 });

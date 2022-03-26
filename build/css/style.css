@@ -1163,6 +1163,24 @@ span.top-menu__link {
     line-height: 34px;
     text-align: center;
     padding-bottom: 45px; }
+  .our__blog .all__posts {
+    position: relative; }
+  .our__blog .slider__blog-home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden; }
+    .our__blog .slider__blog-home .swiper-wrapper {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      width: 100%; }
+      .our__blog .slider__blog-home .swiper-wrapper .swiper__blog-pagination {
+        background-color: red; }
+  .our__blog .slider__blog {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    max-width: 740px; }
 
 /**
  * Swiper 8.0.7

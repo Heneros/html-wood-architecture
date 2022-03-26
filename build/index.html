@@ -295,7 +295,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>  
 	</div>
 </div>
 </section>
@@ -304,9 +304,11 @@
 	<div class="container">
         <div class="row">
 			<h1 class="main__title-blog">Our Blog</h1>
-			<div class="col-md-4">
-				<div class="item__slider-blog">
-					<div class="image__blog">
+		 <div class="col-md-6 slider__blog-home ">
+			<div class="slider__blog">
+	          <div class="swiper-wrapper"> 
+				<div class="swiper-slide item__slider-blog">
+				   <div class="image__blog">
 						<img src="images/our-blog/first-item.png" alt="item slider">
 					</div>
 					<div class="date__item-blog">2 January</div>
@@ -317,10 +319,8 @@
 					<div class="full__story">
 						Full Story 
 					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="item__slider-blog">
+				</div> 
+				<div class="swiper-slide item__slider-blog">
 					<div class="image__blog">
 						<img src="images/our-blog/second-item.png" alt="item slider">
 					</div>
@@ -333,13 +333,50 @@
 						Full Story 
 					</div>
 				</div>
+				<div class="swiper-slide item__slider-blog">
+					<div class="image__blog">
+						<img src="images/our-blog/first-item.png" alt="item slider">
+					</div>
+					<div class="date__item-blog">8 January</div>
+					<h2 class="title__blog-item">Lorem ipsum dolor sit.</h2>
+					<div class="description__blog">
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, assumenda eum iure nulla alias voluptatum?
+					</div>
+					<div class="full__story">
+						Full Story 
+					</div>
+				</div>
+				<div class="swiper-slide item__slider-blog">
+					<div class="image__blog">
+						<img src="images/our-blog/first-item.png" alt="item slider">
+					</div>
+					<div class="date__item-blog">8 January</div>
+					<h2 class="title__blog-item">Lorem ipsum dolor sit.</h2>
+					<div class="description__blog">
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, assumenda eum iure nulla alias voluptatum?
+					</div>
+					<div class="full__story">
+						Full Story 
+					</div>
+				</div>
+				
+			</div> <!--swiper-wrapper--->
+            <div class="row slider__bottom-pagination">
+				<div class="blog-slider__pagination swiper-pagination"></div>
 			</div>
+			
+	
+	    </div><!--slider__blog-home--->
+	</div><!---col-md-8-->
 			<div class="col-md-4">
 				<div class="all__posts">
 					<img src="images/our-blog/all-posts.png" alt="all posts">
+                    <span class="see__all-posts">
+						See All Posts
+					</span>   
 				</div>
-				  
 			</div>
+
 		</div>
 	</div>
 </section>
