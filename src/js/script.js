@@ -90,7 +90,8 @@ document.addEventListener('DOMContentLoaded', function(){
         speed: 400,
         slidesPerView: 2,
         // slidesPerView: "auto",
-        spaceBetween: 20,   
+        // centeredSlides: true,
+        spaceBetween: 40,   
         grabCursor: true,
         pagination: {
             el: ".blog-slider__pagination"
