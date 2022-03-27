@@ -23,7 +23,10 @@ padding-bottom: 45px;
     .swiper-wrapper{    
       box-sizing: border-box;
       width: 100%;   
-      .swiper-slide{
+      .item__slider-blog{
+        border: 1px solid #EEEEEE;
+box-sizing: border-box;
+border-radius: 0px 5px;
         .image__blog{
           border-radius: 0px 5px;
           position: relative;
@@ -53,8 +56,41 @@ padding-bottom: 45px;
           font-size: 18px;
           line-height: 140%;
           text-transform: uppercase;
+          padding-top: 23px;
+          padding-left: 15px;
+          padding-bottom: 17px;
+          position: relative;
+          &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 14px;
+            height: 42px;
+            width: 3px;
+            background-color: $accent;
+          }
+        }
+        .description__blog{
+          font-family: 'raleway-wt';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 170%;
+        }
+        .full__story{
+          padding-top: 13px;
+          color:  $text ;
+          font-family: 'raleway-wt';
+          text-decoration-line: underline;
+          font-weight: 800;
+          font-size: 15px;
+          line-height: 170%;
+          cursor: pointer;
         }
       }
+    }
+    .blog-slider__pagination{
+      text-align: right;
     }
 } 
 .all__posts{
