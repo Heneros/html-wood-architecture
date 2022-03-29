@@ -1303,6 +1303,13 @@ span.top-menu__link {
   .see__all-posts {
     display: none; } }
 
+@media (max-width: 768px) {
+  .our__blog .all__posts {
+    width: 100%;
+    text-align: center; }
+  .block__image-adaptive {
+    left: 0; } }
+
 /**
  * Swiper 8.0.7
  * Most modern mobile touch slider and framework with hardware accelerated transitions

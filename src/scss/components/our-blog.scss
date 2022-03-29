@@ -166,11 +166,14 @@ display: none;
   .see__all-posts{
     display: none;
   }
+}
 
-  // .our__blog .all__posts{
-  //   position: absolute;
-  //   right: 0;
-  //   left: 0;
-  //   margin: auto;
-  // }
+@media(max-width: 768px){
+  .our__blog .all__posts{
+    width: 100%;
+    text-align: center;
+  }
+  .block__image-adaptive{
+    left: 0;
+  }
 }

@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const blogSlider = new Swiper('.slider__blog', {
         speed: 400,
-        slidesPerView: 2,
+        slidesPerView: 1,
         // slidesPerView: "auto",
         // centeredSlides: true,
         spaceBetween: 40,   
@@ -96,9 +96,13 @@ document.addEventListener('DOMContentLoaded', function(){
         pagination: {
             el: ".blog-slider__pagination"
           },
- 
-  
- 
+          breakpoints: {
+            599: {
+                slidesPerView: 2,
+                spaceBetween: 20
+              },
+          }
+        
     });
 
 });
