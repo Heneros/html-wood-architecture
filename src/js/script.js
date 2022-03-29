@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function(){
         slidesPerView: 1,
         // slidesPerView: "auto",
         // centeredSlides: true,
-        spaceBetween: 40,   
+        spaceBetween: 20,   
         grabCursor: true,
         pagination: {
             el: ".blog-slider__pagination"
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function(){
           breakpoints: {
             599: {
                 slidesPerView: 2,
-                spaceBetween: 20
+                spaceBetween: 40
               },
           }
         
