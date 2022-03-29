@@ -1154,9 +1154,10 @@ span.top-menu__link {
     margin: 25px 0; } }
 
 .our__blog {
-  margin-top: 82px; }
+  margin-top: 82px;
+  margin-bottom: 70px; }
   .our__blog .main__title-blog {
-    font-family: 'Raleway';
+    font-family: 'raleway-wt';
     font-style: normal;
     font-weight: 800;
     font-size: 29px;
@@ -1236,8 +1237,20 @@ span.top-menu__link {
           font-size: 15px;
           line-height: 170%;
           cursor: pointer; }
-    .our__blog .slider__blog-home .blog-slider__pagination {
-      text-align: right; }
+    .our__blog .slider__blog-home .slider__bottom-pagination {
+      margin-top: 45px; }
+      .our__blog .slider__blog-home .slider__bottom-pagination .blog-slider__pagination {
+        text-align: right;
+        padding-right: 133px; }
+        .our__blog .slider__blog-home .slider__bottom-pagination .blog-slider__pagination .swiper-pagination-bullet-active {
+          background-color: #F88500;
+          border-radius: 0px 5px;
+          width: 25px;
+          height: 5px; }
+        .our__blog .slider__blog-home .slider__bottom-pagination .blog-slider__pagination .swiper-pagination-bullet {
+          border-radius: 0px 5px;
+          width: 25px;
+          height: 5px; }
   .our__blog .all__posts {
     text-align: right;
     height: 410px;
@@ -1256,6 +1269,39 @@ span.top-menu__link {
       font-size: 18px;
       line-height: 140%;
       cursor: pointer; }
+
+.block__image-adaptive {
+  display: none; }
+
+@media (max-width: 991px) {
+  .our__blog .slider__blog-home {
+    width: 100%; }
+  .our__blog .slider__blog-home .slider__bottom-pagination .blog-slider__pagination {
+    text-align: center;
+    padding-right: unset; }
+  .all__posts {
+    background-image: unset !important; }
+  .block__image-adaptive {
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 180px; }
+    .block__image-adaptive .see__all-posts--adaptive {
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      text-align: center;
+      padding: 170px 112px;
+      -webkit-text-decoration-line: underline;
+              text-decoration-line: underline;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 140%;
+      cursor: pointer;
+      white-space: nowrap; }
+  .see__all-posts {
+    display: none; } }
 
 /**
  * Swiper 8.0.7

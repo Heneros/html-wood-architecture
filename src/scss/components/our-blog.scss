@@ -1,7 +1,8 @@
 .our__blog {
 margin-top: 82px;
+margin-bottom: 70px;
 .main__title-blog{
-font-family: 'Raleway';
+  font-family: 'raleway-wt';
 font-style: normal;
 font-weight: 800;
 font-size: 29px;
@@ -9,7 +10,6 @@ line-height: 34px;
 text-align: center;
 padding-bottom: 45px; 
 }
-
 .slider__blog-home{
     display: flex;     
     overflow: hidden;
@@ -25,8 +25,8 @@ padding-bottom: 45px;
       width: 100%;   
       .item__slider-blog{
         border: 1px solid #EEEEEE;
-box-sizing: border-box;
-border-radius: 0px 5px;
+        box-sizing: border-box;
+        border-radius: 0px 5px;
         .image__blog{
           border-radius: 0px 5px;
           position: relative;
@@ -89,9 +89,25 @@ border-radius: 0px 5px;
         }
       }
     }
+  .slider__bottom-pagination{
+      margin-top: 45px;
     .blog-slider__pagination{
       text-align: right;
+      padding-right: 133px;
+      .swiper-pagination-bullet-active{
+        background-color: $accent;
+        border-radius: 0px 5px;
+        width: 25px;
+        height: 5px;
+      }
+      .swiper-pagination-bullet{
+        // background-color: $light-disabled;
+        border-radius: 0px 5px;
+        width: 25px;
+        height: 5px;
+      }
     }
+  }
 } 
 .all__posts{
   text-align: right;
@@ -111,7 +127,50 @@ border-radius: 0px 5px;
     line-height: 140%;
     cursor: pointer;
   } 
-
 }
+}
+.block__image-adaptive{
+display: none;
+}
+@media(max-width: 991px){
+  .our__blog .slider__blog-home{
+     width: 100%;
+  }
+  .our__blog .slider__blog-home .slider__bottom-pagination .blog-slider__pagination{
+    text-align: center;
+    padding-right: unset;
+  }
+  .all__posts{
+    background-image: unset !important;
+  }
+  .block__image-adaptive{
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 180px;
+    .see__all-posts--adaptive{
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      text-align: center;
+      padding: 170px 112px;
+      text-decoration-line: underline;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 140%;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+  }
+  .see__all-posts{
+    display: none;
+  }
 
+  // .our__blog .all__posts{
+  //   position: absolute;
+  //   right: 0;
+  //   left: 0;
+  //   margin: auto;
+  // }
 }
