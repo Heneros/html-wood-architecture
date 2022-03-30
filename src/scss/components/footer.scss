@@ -1,0 +1,122 @@
+footer{
+    background-color: $deep;
+    padding-bottom: 73px;
+    .left__side-footer{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+        grid-gap: 35px;
+        margin-top: 74px;
+        .logo__link{
+            color: rgba(255, 255, 255, 0.7);
+            i{
+                border: 2px solid rgba(255, 255, 255, 0.7);
+            }
+        }
+        .about__us-text{
+            padding-top: 40px;
+          .title__aboutUs-footer{
+            color: #fff;
+            font-family: "raleway-wt";
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 21px;
+            text-transform: uppercase;
+          }
+          p{
+            padding-top: 20px;
+            color: rgba(255, 255, 255, 0.7);
+          }
+        }  
+       .menu__footer{
+        font-family: "raleway-wt";
+        .title__aboutUs-footer{
+            color: #fff;
+            font-family: "raleway-wt";
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 21px;
+            text-transform: uppercase;
+            &:after{
+                content: "";
+                background-color: $accent;
+                width: 25px;
+                height: 3px;
+                display: block;
+                position: relative;
+                top: 20px;
+                border-radius: 0px 5px;
+            }
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            padding-top: 27px;
+            li{
+                padding-top: 17px;
+            }
+            a{
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            transition: ease-out .3s;
+            letter-spacing: .8px;
+            &:hover{
+                color: $accent;
+                text-decoration-line: underline;
+             }
+          }
+        }
+       }
+    }
+    .right__side-footer{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+        grid-gap: 35px;
+        margin-top: 74px;
+        .services__footer{
+            .title__aboutUs-footer{
+                color: #fff;
+                font-family: "raleway-wt";
+                font-weight: 900;
+                font-size: 18px;
+                line-height: 21px;
+                text-transform: uppercase;
+                &:after{
+                    content: "";
+                    background-color: $accent;
+                    width: 25px;
+                    height: 3px;
+                    display: block;
+                    position: relative;
+                    top: 20px;
+                    border-radius: 0px 5px;
+                }
+            }
+            ul{
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                padding-top: 27px;
+                li{
+                    padding-top: 17px;
+                }
+                a{
+                color: rgba(255, 255, 255, 0.7);
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                transition: ease-out .3s;
+                letter-spacing: .8px;
+                &:hover{
+                    color: $accent;
+                    text-decoration-line: underline;
+                 }
+              }
+            }
+        }
+    }
+}
