@@ -1415,6 +1415,80 @@ footer {
           color: #F88500;
           -webkit-text-decoration-line: underline;
                   text-decoration-line: underline; }
+    footer .right__side-footer .social__networks .title__aboutUs-footer {
+      color: #fff;
+      font-family: "raleway-wt";
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 21px;
+      text-transform: uppercase; }
+    footer .right__side-footer .social__networks p {
+      padding-top: 42px;
+      color: rgba(255, 255, 255, 0.7); }
+    footer .right__side-footer .social__networks .nav__social-footer {
+      display: inline-block;
+      margin-top: 22px; }
+      footer .right__side-footer .social__networks .nav__social-footer .nav-social__item {
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        padding: 11px;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        border-radius: 0px 5px;
+        -webkit-transition: ease-in-out .5s;
+        -o-transition: ease-in-out .5s;
+        transition: ease-in-out .5s;
+        margin-right: 6px; }
+        footer .right__side-footer .social__networks .nav__social-footer .nav-social__item img {
+          max-height: 15.9px; }
+        footer .right__side-footer .social__networks .nav__social-footer .nav-social__item:hover {
+          background-color: #F88500; }
+
+@media (max-width: 768px) {
+  footer .left__side-footer .menu__footer {
+    text-align: center; }
+  footer .left__side-footer .menu__footer .title__aboutUs-footer:after {
+    margin: auto; }
+  .services__footer {
+    text-align: center; }
+  footer .right__side-footer .services__footer .title__aboutUs-footer:after {
+    margin: auto; } }
+
+@media (max-width: 599px) {
+  footer .left__side-footer {
+    grid-template-columns: 1fr; }
+  .about__us-footer {
+    margin: 0 70px; }
+  footer .left__side-footer .about__us-text .title__aboutUs-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  footer .left__side-footer .about__us-text p {
+    text-align: center; }
+  .left__side-footer .logo {
+    text-align: center; }
+  footer .right__side-footer {
+    grid-template-columns: 1fr; }
+  .social__networks {
+    margin: 0 70px; }
+  footer .right__side-footer .social__networks .title__aboutUs-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  footer .right__side-footer .social__networks p {
+    text-align: center; }
+  footer .nav__social-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 /**
  * Swiper 8.0.7
