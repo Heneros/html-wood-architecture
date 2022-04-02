@@ -1500,7 +1500,8 @@ footer {
 .navbar__white {
   background-color: #fff;
   -webkit-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05); }
+          box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
+  padding: 21px 0; }
   .navbar__white .top-menu .top-menu__active {
     background-color: #F88500;
     color: #fff;
@@ -1508,8 +1509,39 @@ footer {
     border-radius: 0px 5px; }
   .navbar__white .logo__link {
     color: #171A1A; }
+    .navbar__white .logo__link span {
+      opacity: 1; }
   .navbar__white .top-menu__link {
     color: #333; }
+    .navbar__white .top-menu__link:hover {
+      background-color: #F88500;
+      color: #fff; }
+    .navbar__white .top-menu__link:focus {
+      background-color: #F88500;
+      color: #fff; }
+  .navbar__white .nav-social-wrap .nav-social {
+    background-color: unset; }
+    .navbar__white .nav-social-wrap .nav-social .nav-social__item img {
+      opacity: 1; }
+      .navbar__white .nav-social-wrap .nav-social .nav-social__item img:hover {
+        opacity: .5; }
+
+.our__projects .our__projects-description {
+  padding: 70px 300px;
+  text-align: center;
+  font-family: "raleway-wt"; }
+  .our__projects .our__projects-description .our__projects-title {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+    text-transform: uppercase; }
+  .our__projects .our__projects-description p {
+    padding-top: 25px;
+    color: #999999;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 170%; }
 
 /**
  * Swiper 8.0.7
