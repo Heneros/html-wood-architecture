@@ -1,0 +1,19 @@
+.navbar__white{
+    background-color: #fff;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
+    .top-menu{
+        .top-menu__active{
+            background-color: $accent;
+            color: #fff;  
+            padding: 7px 15px 8px;
+            border-radius: 0px 5px;
+        }
+    }
+    .logo__link{
+        color: $deep; 
+    }
+    .top-menu__link{
+        color: $text;
+    }
+    
+}

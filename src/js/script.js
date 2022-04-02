@@ -102,7 +102,20 @@ document.addEventListener('DOMContentLoaded', function(){
                 spaceBetween: 40
               },
           }
-        
     });
+   
 
+    $(window).scroll(function(){
+        if($(this).scrollTop()){
+            $('#up').fadeIn()
+        }else{
+            $('#up').fadeOut();
+        }
+    })
+
+
+
+    $('#up').click(function(){
+        ("html, body").animate({scrollTop: 0}, 1000)
+    });
 });

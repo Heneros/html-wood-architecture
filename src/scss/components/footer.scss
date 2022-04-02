@@ -201,8 +201,15 @@ footer{
         text-align: center;
     }
     footer .nav__social-footer{
-        display: flex;
+        display: flex !important;
         justify-content: center;
     }
+}
 
+.up{
+    position: fixed;
+    right: 27px;
+    bottom: 25px;
+    z-index: 999;
+    display: none;
 }

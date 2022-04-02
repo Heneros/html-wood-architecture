@@ -1483,12 +1483,33 @@ footer {
   footer .right__side-footer .social__networks p {
     text-align: center; }
   footer .nav__social-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; } }
+
+.up {
+  position: fixed;
+  right: 27px;
+  bottom: 25px;
+  z-index: 999;
+  display: none; }
+
+.navbar__white {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05); }
+  .navbar__white .top-menu .top-menu__active {
+    background-color: #F88500;
+    color: #fff;
+    padding: 7px 15px 8px;
+    border-radius: 0px 5px; }
+  .navbar__white .logo__link {
+    color: #171A1A; }
+  .navbar__white .top-menu__link {
+    color: #333; }
 
 /**
  * Swiper 8.0.7
