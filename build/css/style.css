@@ -1587,11 +1587,10 @@ footer {
       .our__projects .blocks__items .item__image .hovereffect .info {
         display: inline-block;
         text-decoration: none;
-        padding: 7px 14px;
         text-transform: uppercase;
         color: #fff;
         border: 1px solid #fff;
-        margin: 50px 0 0 0;
+        margin: 0;
         background-color: transparent;
         opacity: 0;
         filter: alpha(opacity=0);
@@ -1602,12 +1601,12 @@ footer {
         -o-transition: all 0.4s ease-in-out;
         transition: all 0.4s ease-in-out;
         font-weight: normal;
-        height: 85%;
+        height: 83%;
         width: 85%;
         position: absolute;
-        top: 0;
+        top: 19px;
         left: 8%;
-        padding: 70px; }
+        padding: 67px 0; }
         .our__projects .blocks__items .item__image .hovereffect .info:hover {
           opacity: 1;
           color: #000;
@@ -1615,6 +1614,24 @@ footer {
               -ms-transform: scale(1);
                   transform: scale(1);
           background-color: #fff; }
+        .our__projects .blocks__items .item__image .hovereffect .info span {
+          color: #999999;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 170%; }
+        .our__projects .blocks__items .item__image .hovereffect .info h2 {
+          color: #333;
+          text-transform: uppercase;
+          font-weight: 900;
+          font-size: 18px;
+          line-height: 21px; }
+        .our__projects .blocks__items .item__image .hovereffect .info a {
+          color: #999999;
+          -webkit-text-decoration-line: underline;
+                  text-decoration-line: underline;
+          font-weight: 800;
+          font-size: 15px;
+          line-height: 170%; }
     .our__projects .blocks__items .item__image .hovereffect:hover img {
       -webkit-transform: scale(1);
           -ms-transform: scale(1);
@@ -1636,6 +1653,91 @@ footer {
       grid-row-end: span 2;
       padding: 0;
       margin: 0; }
+      .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        text-align: center; }
+        .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect .overlay {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          overflow: hidden;
+          top: 0;
+          left: 0;
+          -webkit-transition: all 0.4s ease-in-out;
+          -o-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out; }
+          .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect .overlay:hover {
+            background-color: transparent; }
+        .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect img {
+          -webkit-transition: all 0.4s ease-in-out;
+          -o-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
+          display: block;
+          position: relative;
+          -webkit-transform: scale(1.1);
+              -ms-transform: scale(1.1);
+                  transform: scale(1.1); }
+          .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect img:hover {
+            -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                    transform: scale(1); }
+        .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect .info {
+          display: inline-block;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #fff;
+          border: 1px solid #fff;
+          margin: 18px 0 0 0;
+          background-color: transparent;
+          opacity: 0;
+          filter: alpha(opacity=0);
+          -webkit-transform: scale(1.5);
+              -ms-transform: scale(1.5);
+                  transform: scale(1.5);
+          -webkit-transition: all 0.4s ease-in-out;
+          -o-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
+          font-weight: normal;
+          height: 93%;
+          width: 85%;
+          position: absolute;
+          top: 0;
+          left: 8%;
+          padding: 185px 0 0; }
+          .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect .info:hover {
+            opacity: 1;
+            color: #000;
+            -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                    transform: scale(1);
+            background-color: #fff; }
+          .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect .info span {
+            color: #999999;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 170%; }
+          .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect .info h2 {
+            color: #333;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 21px; }
+          .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect .info a {
+            color: #999999;
+            -webkit-text-decoration-line: underline;
+                    text-decoration-line: underline;
+            font-weight: 800;
+            font-size: 15px;
+            line-height: 170%; }
+      .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect:hover img {
+        -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+                transform: scale(1); }
 
 /**
  * Swiper 8.0.7
