@@ -1755,6 +1755,28 @@ footer {
   .our__projects .blocks__items {
     padding: 0 21px 70px; } }
 
+@media (max-width: 991px) {
+  .our__projects .our__projects-description {
+    padding: 70px 0px; } }
+
+@media (max-width: 600px) {
+  .our__projects .blocks__items .item__image img {
+    height: 375px;
+    max-height: 375px; }
+  .our__projects .blocks__items .item__image:nth-child(2n + 1) img {
+    height: 375px;
+    max-height: 375px; }
+  .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect .info {
+    padding: 133px 0 0;
+    height: 87%; }
+  .our__projects .blocks__items .item__image .hovereffect .info {
+    padding: 133px 0 0;
+    height: 87%; } }
+
+@media (max-width: 425px) {
+  .our__projects .blocks__items {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 3fr)); } }
+
 /**
  * Swiper 8.0.7
  * Most modern mobile touch slider and framework with hardware accelerated transitions
