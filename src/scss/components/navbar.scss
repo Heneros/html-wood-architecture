@@ -116,6 +116,12 @@ span.top-menu__link{
 .nav-social__item:hover img{
 	opacity: 1;
  }
+ .navbar__white .menu-toggle{
+	background-image: url('../images/interface/menu-dark.svg');
+}
+
+
+
  @media (max-width : 992px) {
     .top-menu{
         position: absolute;
@@ -150,6 +156,9 @@ span.top-menu__link{
     .menu-toggle{
         display: block;
     }
+	.navbar__white .top-menu__link {
+		color: #fff !important;
+	}
 }
  @media (max-width : 1200px) {
     .top-menu__item{
