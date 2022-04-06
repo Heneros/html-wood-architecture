@@ -215,3 +215,21 @@
         }
     }
 }
+
+@media(max-width: 1450px){
+    .our__projects .blocks__items{
+        padding: 0 220px 70px;
+    }
+    .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect img{
+        transform: scale(1);
+    }
+    .our__projects .blocks__items .item__image .hovereffect img{
+        transform: scale(1);
+    }
+}
+@media(max-width: 1200px){
+    .our__projects .blocks__items{
+        padding: 0 21px 70px;
+    }
+}
+
