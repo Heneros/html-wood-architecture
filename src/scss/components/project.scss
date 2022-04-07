@@ -1,0 +1,35 @@
+.project{
+    .breadcrumbs ul{
+        display: inline-block;
+
+        list-style-type: none;
+        position: relative;
+        li{
+            display: inline-block;
+            a{
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                color: #CCCCCC;
+                padding: 0 6px;
+                text-decoration: underline;
+            }
+            .triangle__left{
+                text-decoration: none;
+            }
+            .triangle__left::after{
+                content: ">";
+                left: 0px;
+                position: relative;
+                text-decoration: none;
+                color: #CCCCCC;
+            }
+            .active__breadcrumb{
+            color: #888888;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            }
+        }
+    }
+}
