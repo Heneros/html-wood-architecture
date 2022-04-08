@@ -103,8 +103,6 @@ document.addEventListener('DOMContentLoaded', function(){
               },
           }
     });
-   
-
     $(window).scroll(function(){
         if($(this).scrollTop()){
             $('#up').fadeIn()
@@ -112,10 +110,20 @@ document.addEventListener('DOMContentLoaded', function(){
             $('#up').fadeOut();
         }
     })
-
-
-
     $('#up').click(function(){
         ("html, body").animate({scrollTop: 0}, 1000)
     });
+
+    var swiper = new Swiper(".mySwiperGallery1", {
+        spaceBetween: 7,
+        slidesPerView: 8,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiperGallery2", {
+        spaceBetween: 10,
+        thumbs: {
+          swiper: swiper,
+        },
+      });
 });

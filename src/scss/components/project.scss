@@ -1,9 +1,14 @@
 .project{
-    .breadcrumbs ul{
+    margin-top: 73px;
+    .breadcrumbs {
+        display: flex;
+        justify-content: space-between;
+    ul{
         display: inline-block;
-
         list-style-type: none;
         position: relative;
+        padding: 0;
+        font-family: "raleway-wt"; 
         li{
             display: inline-block;
             a{
@@ -29,7 +34,79 @@
             font-weight: 700;
             font-size: 14px;
             line-height: 16px;
+            padding-left: 8px;
             }
         }
     }
+    .location{
+        color: #888888;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 170%;
+        position: relative;
+        &::after{
+            content: "";
+            background-image: url('../images/marker.svg');
+            display: block;
+            width: 12px;
+            height: 16px;
+            position: absolute;
+            top: 2px;
+            left: -20px;
+        }
+    }
+  }
+  .gallery{
+      
+  }
+  .swiper{
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .swiper-slide{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      img{
+        display: block;
+        width: 100%;
+        height: 80px;
+        object-fit: cover;
+      }
+  }
+  .mySwiperGallery2 {
+    img{
+        display: block;
+        width: 100%;
+        height: 630px;
+        object-fit: cover;
+      }
+  }
+  .mySwiperGallery2{
+    width: 100%;
+    height: 80%;
+  }
+  .mySwiperGallery1{
+      height: 20%;
+      box-sizing: border-box;
+      padding: 10px 0;
+      .swiper-slider{
+          width: 25%;
+          height: 100%;
+          opacity: 0.4;
+          img{
+              height: 80px;
+          }
+      }
+      .swiper-slide-thumb-active{
+        opacity: 1;
+      }
+  }
+
+
+
+
 }
