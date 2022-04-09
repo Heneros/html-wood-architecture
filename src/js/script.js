@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function(){
         slidesPerView: 5,
         freeMode: true,
         watchSlidesProgress: true,
-        breakoints:{
+        breakpoints:{
             768:{
                 spaceBetween: 7,
                 slidesPerView: 8,

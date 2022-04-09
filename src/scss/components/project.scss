@@ -74,7 +74,8 @@
       img{
         display: block;
         width: 100%;
-        height: 80px;
+        // height: 80px;
+        height: 100px;
         object-fit: cover;
       }
   }
@@ -98,7 +99,6 @@
           width: 25%;
           height: 100%;
           opacity: 0.4;
-   
           img{
               height: 80px;
           }
@@ -111,6 +111,8 @@
       }
   }
 }
+
+
 
 @media(max-width: 765px){
     .project .mySwiperGallery2 img{
@@ -137,5 +139,7 @@
     .project .breadcrumbs .location{
         margin-left: 60px;
     }
-
 }
+
+
+
