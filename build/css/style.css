@@ -1850,7 +1850,8 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center; }
+    text-align: center;
+    border: 2px solid transparent; }
     .project .swiper-slide img {
       display: block;
       width: 100%;
@@ -1879,6 +1880,26 @@ footer {
         height: 80px; }
     .project .mySwiperGallery1 .swiper-slide-thumb-active {
       opacity: 1; }
+    .project .mySwiperGallery1 .swiper-slide-thumb-active {
+      border: 2px solid #F88500; }
+
+@media (max-width: 765px) {
+  .project .mySwiperGallery2 img {
+    max-height: 330px; } }
+
+@media (max-width: 455px) {
+  .project .breadcrumbs ul li a {
+    font-size: 12px; }
+  .project .breadcrumbs .location {
+    font-size: 12px;
+    line-height: 2; }
+  .project .breadcrumbs ul li .active__breadcrumb {
+    font-size: 12px; }
+  .project .breadcrumbs {
+    overflow-x: auto;
+    white-space: nowrap; }
+  .project .breadcrumbs .location {
+    margin-left: 60px; } }
 
 /**
  * Swiper 8.0.7
