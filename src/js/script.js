@@ -116,14 +116,20 @@ document.addEventListener('DOMContentLoaded', function(){
 
     var swiper = new Swiper(".mySwiperGallery1", {
         spaceBetween: 7,
-        slidesPerView: 5,
+        slidesPerView: 3,
         freeMode: true,
         watchSlidesProgress: true,
+        freeMode: true,
         breakpoints:{
+            415:{
+                spaceBetween: 7,
+                slidesPerView: 4 ,
+            },
             768:{
                 spaceBetween: 7,
                 slidesPerView: 8,
             },
+      
 
         }
       });
