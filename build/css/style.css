@@ -1996,6 +1996,15 @@ footer {
   .container__description .col-md-8 {
     width: 100%; } }
 
+.our-services {
+  margin-top: 70px; }
+  .our-services .text__our-services {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 281px; }
+    .our-services .text__our-services h1 {
+      padding-bottom: 40px; }
+
 /**
  * Swiper 8.0.7
  * Most modern mobile touch slider and framework with hardware accelerated transitions
