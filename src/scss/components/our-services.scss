@@ -10,7 +10,11 @@
     }
     .row{
         margin: 0 auto;
+        margin-top: 50px;
         margin-bottom: 120px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(550px, 2fr));
+        grid-gap: 20px;
         .item__service{
             display: flex;
             align-items: center;
@@ -48,7 +52,6 @@
                 &:hover{
                     color: $accent;
                     text-decoration-line: underline;
-
                 }
             }
             p {
@@ -68,14 +71,46 @@
         color: #fff;
         text-transform: uppercase;
         font-weight: 800;
-font-size: 14px;
-line-height: 145%;
+        font-size: 14px;
+        line-height: 145%;
         width: 200px;
         height: 44px;
         border: 1px solid transparent;
         outline: none;
         cursor: pointer;
         margin-bottom: 50px;
+        transition: .3s;
 
+    }
+}
+
+@media(max-width: 991px){
+    .our-services .text__our-services{
+        padding: 0;
+    }
+}
+
+@media(max-width: 768px) {
+    .our-services .row{
+        grid-template-columns: repeat(auto-fill, minmax(510px, 2fr));
+    }
+    .our-services .row .item__service{
+        margin: 0;
+    }
+    .our-services .row .item__text{
+        padding: 0;
+    }
+}
+
+@media(max-width: 555px){
+    .our-services .row .item__service {
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .our-services .row .item__text{
+        text-align: center;
+    }
+    .our-services .row {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 2fr));
     }
 }
