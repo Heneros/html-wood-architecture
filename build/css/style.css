@@ -29,7 +29,7 @@ input:required:valid, textarea:required:valid {
   border-color: green; }
 
 body {
-  font-family: raleway-wt, sans-serif;
+  font-family: raleway-wt, sans-serif, Arial;
   font-size: 16px;
   line-height: 1.75;
   color: #333;
@@ -1903,7 +1903,7 @@ footer {
 
 .description__project {
   margin-top: 55px;
-  font-family: raleway-wt, sans-serif; }
+  font-family: raleway-wt, sans-serif, Arial; }
   .description__project .main_title__description-project {
     color: #333;
     font-weight: 800;
@@ -2003,7 +2003,15 @@ footer {
     margin: 0 auto;
     padding: 0 281px; }
     .our-services .text__our-services h1 {
-      padding-bottom: 40px; }
+      padding-bottom: 40px;
+      font-family: raleway-wt, sans-serif, Arial;
+      text-align: center;
+      margin: 0 auto;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: uppercase; }
   .our-services .row {
     margin: 0 auto;
     margin-top: 50px;
@@ -2046,7 +2054,7 @@ footer {
       padding: 38px 30px;
       text-align: left; }
       .our-services .row .item__text .title {
-        font-family: raleway-wt, sans-serif;
+        font-family: raleway-wt, sans-serif, Arial;
         text-transform: uppercase;
         font-weight: 800;
         font-size: 18px;
@@ -2113,6 +2121,46 @@ footer {
     text-align: center; }
   .our-services .row {
     grid-template-columns: repeat(auto-fill, minmax(100%, 2fr)); } }
+
+.blog__post {
+  margin-top: 70px; }
+  .blog__post .title {
+    font-family: raleway-wt, sans-serif, Arial;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase; }
+  .blog__post .our__blog-desc {
+    color: #999999;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 170%;
+    text-align: center;
+    padding: 25px 281px; }
+  .blog__post .post__photo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .blog__post .content__blog-post p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    padding: 60px 82px 35px; }
+  .blog__post .content__blog-post img {
+    padding: 0 35px;
+    width: 100%; }
+
+@media (max-width: 991px) {
+  .blog__post .our__blog-desc {
+    padding: 25px 0; } }
+
+@media (max-width: 600px) {
+  .blog__post .content__blog-post p {
+    padding: 60px 0 35px; } }
 
 /**
  * Swiper 8.0.7
