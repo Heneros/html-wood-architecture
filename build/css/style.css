@@ -2122,6 +2122,90 @@ footer {
   .our-services .row {
     grid-template-columns: repeat(auto-fill, minmax(100%, 2fr)); } }
 
+.blog__company {
+  margin-top: 82px;
+  margin-bottom: 70px; }
+  .blog__company .description__main-blog {
+    padding: 0px 300px;
+    text-align: center;
+    font-family: "raleway-wt"; }
+    .blog__company .description__main-blog .main__blog-title {
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 28px;
+      color: #333333;
+      text-transform: uppercase; }
+    .blog__company .description__main-blog p {
+      padding-top: 25px;
+      color: #999999;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 170%; }
+  .blog__company .main__blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 3fr));
+    grid-gap: 20px; }
+    .blog__company .main__blog .item__blog {
+      border: 1px solid #EEEEEE;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      border-radius: 0px 5px; }
+      .blog__company .main__blog .item__blog .image__blog {
+        border-radius: 0px 5px;
+        position: relative; }
+        .blog__company .main__blog .item__blog .image__blog img {
+          width: 100%;
+          height: 210px; }
+        .blog__company .main__blog .item__blog .image__blog .date__item-blog {
+          position: absolute;
+          top: 14px;
+          left: 20px;
+          color: #fff;
+          background-color: #F88500;
+          border-radius: 0px 5px;
+          padding: 4px 10px 5px;
+          font-family: 'roboto-wt';
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 10px;
+          text-transform: uppercase; }
+      .blog__company .main__blog .item__blog .title__blog-item {
+        color: #333;
+        font-family: 'raleway-wt';
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 140%;
+        text-transform: uppercase;
+        padding-top: 23px;
+        padding-left: 15px;
+        padding-bottom: 17px;
+        position: relative;
+        cursor: pointer; }
+        .blog__company .main__blog .item__blog .title__blog-item::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 14px;
+          height: 42px;
+          width: 3px;
+          background-color: #F88500; }
+      .blog__company .main__blog .item__blog .description__blog {
+        font-family: 'raleway-wt';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 170%; }
+      .blog__company .main__blog .item__blog .full__story {
+        padding-top: 13px;
+        color: #333;
+        font-family: 'raleway-wt';
+        -webkit-text-decoration-line: underline;
+                text-decoration-line: underline;
+        font-weight: 800;
+        font-size: 15px;
+        line-height: 170%;
+        cursor: pointer; }
+
 .blog__post {
   margin-top: 70px; }
   .blog__post .title {
