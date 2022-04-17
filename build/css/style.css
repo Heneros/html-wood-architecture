@@ -2218,18 +2218,27 @@ footer {
     .blog__company .pagination .btn__pagination {
       outline: none;
       border: none;
-      background-color: unset; }
+      background-color: unset;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      position: relative; }
+      .blog__company .pagination .btn__pagination:hover {
+        -webkit-text-decoration-line: underline;
+                text-decoration-line: underline;
+        color: #F88500; }
     .blog__company .pagination .number__pagination {
-      margin: 0 20px; }
+      margin: 0 5px; }
       .blog__company .pagination .number__pagination a {
         text-decoration: none;
         color: #C4C4C4;
         font-weight: 600;
         font-size: 15px;
         line-height: 18px;
-        -webkit-transition: .3s;
-        -o-transition: .3s;
-        transition: .3s; }
+        -webkit-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
+        padding: 15px; }
         .blog__company .pagination .number__pagination a:hover {
           color: #fff;
           background-color: #F88500; }

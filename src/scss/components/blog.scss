@@ -101,24 +101,33 @@
             outline: none;
             border: none;
             background-color: unset;
-            // color: #C4C4C4;
+            transition: .3s;
+            position: relative;
+            &:hover{
+                 text-decoration-line: underline;
+                 color: $accent;
+            }
+   
+            // .right__arrow{
+            //     position: relative;
+            //     bottom: 2px;
+            // }
         }
         .number__pagination{
-            margin: 0 20px;
+            margin: 0 5px;
             a{
             text-decoration: none;
             color: #C4C4C4;
             font-weight: 600;
             font-size: 15px;
             line-height: 18px;
-            transition: .3s;
+            transition: .5s;
+            padding: 15px;
             &:hover{
-                    
                     color: #fff;
                     background-color: $accent;
+             }
             }
-            }
-
         }
     }
 }
