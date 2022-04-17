@@ -91,4 +91,34 @@
     }
         }
     }
+    .pagination{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        font-family: $userfont;
+        font-size: 15px;
+        .btn__pagination{
+            outline: none;
+            border: none;
+            background-color: unset;
+            // color: #C4C4C4;
+        }
+        .number__pagination{
+            margin: 0 20px;
+            a{
+            text-decoration: none;
+            color: #C4C4C4;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+            transition: .3s;
+            &:hover{
+                    
+                    color: #fff;
+                    background-color: $accent;
+            }
+            }
+
+        }
+    }
 }

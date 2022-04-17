@@ -2205,6 +2205,34 @@ footer {
         font-size: 15px;
         line-height: 170%;
         cursor: pointer; }
+  .blog__company .pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 50px;
+    font-family: raleway-wt, sans-serif, Arial;
+    font-size: 15px; }
+    .blog__company .pagination .btn__pagination {
+      outline: none;
+      border: none;
+      background-color: unset; }
+    .blog__company .pagination .number__pagination {
+      margin: 0 20px; }
+      .blog__company .pagination .number__pagination a {
+        text-decoration: none;
+        color: #C4C4C4;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s; }
+        .blog__company .pagination .number__pagination a:hover {
+          color: #fff;
+          background-color: #F88500; }
 
 .blog__post {
   margin-top: 70px; }
