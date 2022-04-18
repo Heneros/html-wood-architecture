@@ -1,8 +1,8 @@
 @import 'variables';            
 @import 'base';                  
 @import 'fonts';                                             
-                                               
-///HomePage                                                                                 
+                                                    
+/// HomePage                                                                                 
 @import "components/modal";                         
 @import "components/navbar";                       
 @import "components/home-slider";
@@ -27,3 +27,6 @@
 //Blog          
 @import "components/blog";  
 @import "components/blog-post";  
+       
+///Company 
+@import "components/company";
