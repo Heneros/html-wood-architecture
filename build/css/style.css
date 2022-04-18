@@ -2301,6 +2301,24 @@ footer {
   .blog__post .content__blog-post p {
     padding: 60px 0 35px; } }
 
+.company {
+  margin-top: 70px;
+  margin-bottom: 66px; }
+  .company .main__title-company {
+    font-family: raleway-wt, sans-serif, Arial;
+    color: #333;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 35px;
+    padding-bottom: 25px; }
+  .company .image__container {
+    padding: 35px 0; }
+    .company .image__container img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: contain;
+         object-fit: contain; }
+
 /**
  * Swiper 8.0.7
  * Most modern mobile touch slider and framework with hardware accelerated transitions
