@@ -213,3 +213,9 @@ footer{
     z-index: 999;
     display: none;
 }
+
+@media(max-width: 410px){
+    footer .right__side-footer .social__networks .title__aboutUs-footer{
+        text-align: center;
+    }
+}

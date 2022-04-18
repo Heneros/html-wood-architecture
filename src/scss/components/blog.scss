@@ -73,14 +73,14 @@
         }
     }
     .description__blog{
-        font-family: 'raleway-wt';
+    font-family: 'raleway-wt';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 170%;
     }
     .full__story{
-        padding-top: 13px;
+    padding-top: 13px;
     color: #333;
     font-family: 'raleway-wt';
     text-decoration-line: underline;
@@ -89,8 +89,8 @@
     line-height: 170%;
     cursor: pointer;
     }
-        }
-    }
+  }
+}
     .pagination{
         display: flex;
         justify-content: center;
@@ -107,11 +107,6 @@
                  text-decoration-line: underline;
                  color: $accent;
             }
-   
-            // .right__arrow{
-            //     position: relative;
-            //     bottom: 2px;
-            // }
         }
         .number__pagination{
             margin: 0 5px;
@@ -129,5 +124,27 @@
              }
             }
         }
+    }
+}
+
+ 
+@media(max-width: 991px){
+    .blog__company .main__blog .item__blog .image__blog img{
+        height: 100%;
+    }
+    .blog__company .description__main-blog{
+        padding: 15px 0px;
+    }
+}
+
+@media(max-width: 405px){
+    .blog__company .main__blog{
+        grid-template-columns: repeat(auto-fit, minmax(260px, 3fr));
+    }
+    .blog__company .pagination .number__pagination{
+        margin: 0;
+    }
+    .blog__company .pagination .number__pagination a{
+        padding: 12px;
     }
 }
