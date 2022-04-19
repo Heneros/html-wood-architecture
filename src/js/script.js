@@ -141,12 +141,45 @@ document.addEventListener('DOMContentLoaded', function(){
       });
 
 
-      function openTab(cityName) {
-        var i;
-        var x = document.getElementsByClassName("tab");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";  
+      $(".js-tabs-head-item").on('click', function () {
+        // aleft('l')
+        if (!$(this).hasClass("active")) {
+           let btns = $(this).closest(".js-tabs").find(".js-tabs-head-item");
+           let count;
+           $(btns).each(function () {
+              $(this).removeClass("active");
+           })
+  
+           $(this).addClass("active");
+  
+           $(btns).each(function (index) {
+              if ($(this).hasClass("active")) {
+                 count = index;
+              }
+           })
+  
+           let blocks = $('.js-tabs-body').find('.js-tabs-body-item');
+  
+           $(blocks).each(function (index) {
+              if (index == count) {
+                 $(this).addClass("active");
+                 if ($(this).hasClass('js-anim-left')) {
+                    $(this).css('display', 'block')
+                       .css('left', '100px').css('opacity', '0')
+                       .animate({
+                          // transform: "translate3d(0, 0, 0)",
+                          left: '0px',
+                          opacity: '1'
+                       }, 400)
+                 }
+              } else {
+                 $(this).removeClass("active");
+                 if ($(this).hasClass('js-anim-left')) {
+                    $(this).css('opacity', '0').css('display', 'none')
+                 }
+              }
+           })
         }
-        document.getElementById(cityName).style.display = "block";  
-      }
+  
+     })
 });

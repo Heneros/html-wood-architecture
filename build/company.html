@@ -64,39 +64,33 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <aside class="tabs__items">
+                    <aside class="tabs__items js-tabs">
                         <span class="title__tabs">
 							Information About Us
 						 </span>
-                        <ul>
-                            <li><a
-								onclick="openTab('description')"
-								class="item__tab"
-								href="#!">
-                                About Company
-                            </a></li>
-                            <li><a 
-								onclick="openTab('description')"
-								class="item__tab"
-								href="#!">
-                                Advantages
-                            </a></li>
-                            <li><a 
-								onclick="openTab('our__partners')"
-								class="item__tab"
-								href="#!">
-                                Our Partners
-                            </a></li>
-                            <li><a class="item__tab"
-								href="#!">
-                                Feedback
-                            </a></li>
-                        </ul>
-
+						 <button 
+						data-tab-open="about__company"
+						class="item__tab js-tabs-head-item"
+						type="button">
+							About Company
+						 </button>
+						 <button 
+						 data-tab-open="advantages"
+							class="item__tab js-tabs-head-item"
+					 type="button">
+					 Advantages
+					 </button>
+					 <button 
+					 data-tab-open="our__partners"
+					class="item__tab js-tabs-head-item"
+				 type="button">
+				 Our Partners
+				 </button>
                     </aside>
                 </div>
-                <div class="col-md-9">
-                    <div id="description" class="description__company tab">
+                <div class="col-md-9 js-tabs-body">
+                    <div  data-tab="about__company"  class="about__company
+					 js-tabs-body-item active">
                         <h1 class="main__title-company">About Company Wood Architecture</h1>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, dolores non nobis amet quisquam ab, facere repellat delectus fuga iste illum assumenda cum fugiat, reprehenderit obcaecati tempore odit voluptatibus voluptas itaque ipsam quod temporibus? Aliquid eum deleniti, libero inventore ducimus reiciendis aperiam optio sed ab!
@@ -126,11 +120,11 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, aspernatur magnam dolore laudantium dolorum perferendis cum aperiam sit. Error voluptatibus commodi omnis obcaecati vero modi ex provident incidunt aliquam, ullam enim. Voluptatum optio laboriosam hic veritatis dicta ea adipisci! Sequi mollitia provident aliquam enim incidunt!
                         </p>
                     </div>
-					<div id="advantages" class="advantages tab" style="display:none">
+					<div  data-tab="advantages"      class="advantages js-tabs-body-item" >
 						advantages
 					</div>
-					<div class="our__partners" class="our__partners tab" style="display:none">
-						Our Partners
+					<div  data-tab="our__partners"    class="our__partners js-tabs-body-item" >
+						our__partners
 					</div>
 
                 </div>

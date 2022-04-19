@@ -2345,6 +2345,19 @@ footer {
         .company .tabs__items ul .item__tab:hover {
           background-color: #F88500;
           color: #fff; }
+  .company .about__company {
+    display: none; }
+  .company .our__partners {
+    display: none; }
+  .company .advantages {
+    display: none; }
+  .company .about__company.active {
+    display: block; }
+  .company .our__partners.active {
+    display: block;
+    color: #333; }
+  .company .advantages.active {
+    display: block; }
 
 /**
  * Swiper 8.0.7

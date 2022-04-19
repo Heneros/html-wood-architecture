@@ -49,4 +49,24 @@
            }
          }
      }
+     .about__company{
+        display: none;
+     }
+     .our__partners{
+        display: none;
+     }
+     .advantages{
+         display: none;
+     }
+
+     .about__company.active{
+        display: block;
+     }
+     .our__partners.active{
+        display: block;
+        color: $text;
+     }
+     .advantages.active{
+         display: block;
+     }
  }
