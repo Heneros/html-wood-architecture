@@ -2318,6 +2318,33 @@ footer {
       height: 100%;
       -o-object-fit: contain;
          object-fit: contain; }
+  .company .tabs__items {
+    font-family: raleway-wt, sans-serif, Arial; }
+    .company .tabs__items .title__tabs {
+      padding-left: 28px;
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: uppercase; }
+    .company .tabs__items ul {
+      list-style-type: none;
+      padding: 0; }
+      .company .tabs__items ul li {
+        margin: 21px 0; }
+      .company .tabs__items ul .item__tab {
+        margin: 21px 0;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #666666;
+        text-decoration: none;
+        padding: 10px 158px 10px 28px;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s; }
+        .company .tabs__items ul .item__tab:hover {
+          background-color: #F88500;
+          color: #fff; }
 
 /**
  * Swiper 8.0.7
