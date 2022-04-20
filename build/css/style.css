@@ -2341,7 +2341,8 @@ footer {
         padding: 10px 158px 10px 28px;
         -webkit-transition: .3s;
         -o-transition: .3s;
-        transition: .3s; }
+        transition: .3s;
+        cursor: pointer; }
         .company .tabs__items ul .item__tab:hover {
           background-color: #F88500;
           color: #fff; }
@@ -2349,15 +2350,17 @@ footer {
     display: none; }
   .company .our__partners {
     display: none; }
-  .company .advantages {
+  .company .advantages__block {
     display: none; }
   .company .about__company.active {
     display: block; }
   .company .our__partners.active {
     display: block;
     color: #333; }
-  .company .advantages.active {
+  .company .advantages__block.active {
     display: block; }
+  .company ul li .active {
+    background-color: #F88500; }
 
 /**
  * Swiper 8.0.7

@@ -42,6 +42,7 @@
             // padding: 10px 30px;
             padding: 10px 158px 10px 28px;
             transition: .3s;
+            cursor: pointer;
             &:hover{
                 background-color: $accent;
                 color: #fff;
@@ -55,7 +56,7 @@
      .our__partners{
         display: none;
      }
-     .advantages{
+     .advantages__block{
          display: none;
      }
 
@@ -66,7 +67,14 @@
         display: block;
         color: $text;
      }
-     .advantages.active{
+     .advantages__block.active{
          display: block;
      }
+     ul li .active{
+        background-color: $accent;
+        color: #fff;
+     }     
+    //  ul li .active {
+    //     background-color: $accent;
+    //  }
  }

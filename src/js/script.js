@@ -142,7 +142,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
       $(".js-tabs-head-item").on('click', function () {
-        // aleft('l')
         if (!$(this).hasClass("active")) {
            let btns = $(this).closest(".js-tabs").find(".js-tabs-head-item");
            let count;
@@ -157,9 +156,7 @@ document.addEventListener('DOMContentLoaded', function(){
                  count = index;
               }
            })
-  
            let blocks = $('.js-tabs-body').find('.js-tabs-body-item');
-  
            $(blocks).each(function (index) {
               if (index == count) {
                  $(this).addClass("active");
