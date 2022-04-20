@@ -2359,8 +2359,15 @@ footer {
     color: #333; }
   .company .advantages__block.active {
     display: block; }
-  .company ul li .active {
-    background-color: #F88500; }
+  .company aside ul li .active {
+    background-color: #F88500;
+    color: #fff !important; }
+  .company .advantage__items {
+    font-family: raleway-wt, sans-serif, Arial;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(253px, 3fr)); }
+    .company .advantage__items .advantage__item {
+      text-align: center; }
 
 /**
  * Swiper 8.0.7

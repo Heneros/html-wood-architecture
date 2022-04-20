@@ -70,11 +70,16 @@
      .advantages__block.active{
          display: block;
      }
-     ul li .active{
+     aside ul li .active{
         background-color: $accent;
-        color: #fff;
-     }     
-    //  ul li .active {
-    //     background-color: $accent;
-    //  }
+        color: #fff !important;
+     }      
+     .advantage__items{
+        font-family: $userfont;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(253px,3fr));
+        .advantage__item{
+          text-align: center;
+        }
+     }
  }
