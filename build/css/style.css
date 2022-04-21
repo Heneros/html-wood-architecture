@@ -2342,7 +2342,8 @@ footer {
         -webkit-transition: .3s;
         -o-transition: .3s;
         transition: .3s;
-        cursor: pointer; }
+        cursor: pointer;
+        white-space: nowrap; }
         .company .tabs__items ul .item__tab:hover {
           background-color: #F88500;
           color: #fff; }
@@ -2362,12 +2363,78 @@ footer {
   .company aside ul li .active {
     background-color: #F88500;
     color: #fff !important; }
+  .company .title__advantages {
+    text-align: center;
+    font-family: raleway-wt, sans-serif, Arial;
+    color: #333;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 35px; }
   .company .advantage__items {
     font-family: raleway-wt, sans-serif, Arial;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(253px, 3fr)); }
+    grid-template-columns: repeat(auto-fit, minmax(253px, 3fr));
+    margin-top: 60px; }
     .company .advantage__items .advantage__item {
-      text-align: center; }
+      text-align: center;
+      border-bottom: 1px solid #E7E7E8;
+      margin: 45px 20px; }
+      .company .advantage__items .advantage__item .advantage__item-title {
+        font-weight: 800;
+        font-size: 19px;
+        line-height: 22px;
+        padding: 23px 0 12px 0;
+        display: block;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        cursor: pointer; }
+        .company .advantage__items .advantage__item .advantage__item-title:hover {
+          color: #F88500;
+          -webkit-text-decoration-line: underline;
+                  text-decoration-line: underline; }
+      .company .advantage__items .advantage__item p {
+        text-align: center;
+        padding: 0px 20px; }
+      .company .advantage__items .advantage__item .read__more {
+        -webkit-text-decoration-line: underline;
+                text-decoration-line: underline;
+        color: #333;
+        font-weight: 800;
+        font-size: 15px;
+        line-height: 170%;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        cursor: pointer; }
+        .company .advantage__items .advantage__item .read__more:hover {
+          color: #F88500; }
+
+@media (max-width: 1400px) {
+  .company .tabs__items ul .item__tab {
+    padding: 10px 90px 10px 28px; } }
+
+@media (max-width: 1200px) {
+  .company .tabs__items .title__tabs {
+    padding-left: unset; } }
+
+@media (max-width: 991px) {
+  .company .advantage__items {
+    grid-template-columns: repeat(auto-fill, minmax(582px, 1fr)); }
+  .company .tabs__items ul .item__tab {
+    padding: 10px 28px 10px 28px; } }
+
+@media (max-width: 765px) {
+  .company .advantage__items {
+    grid-template-columns: unset; }
+  .company .tabs__items ul {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    overflow-x: auto;
+    width: 100%; }
+  .company .tabs__items ul .item__tab {
+    padding: 10px 28px 10px 28px; } }
 
 /**
  * Swiper 8.0.7

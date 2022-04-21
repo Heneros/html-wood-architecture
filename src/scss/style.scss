@@ -2,7 +2,7 @@
 @import 'base';                  
 @import 'fonts';                                                        
                                                                                                       
-/// HomePage                                                                                 
+/// HomePage                                                 
 @import "components/modal";                         
 @import "components/navbar";                       
 @import "components/home-slider";
@@ -21,12 +21,12 @@
 @import "components/description-project"; 
       
          
-///Our Services           
+///Our Services            
 @import "components/our-services";  
           
-//Blog          
+//Blog           
 @import "components/blog";  
 @import "components/blog-post";  
-               
-///Company       
+                                 
+///Company                      
 @import "components/company";
