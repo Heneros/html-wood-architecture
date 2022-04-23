@@ -59,7 +59,9 @@
      .advantages__block{
          display: none;
      }
-
+     .contact__us{
+      display: none;
+     }
      .about__company.active{
         display: block;
      }
@@ -70,6 +72,9 @@
      .advantages__block.active{
          display: block;
      }
+     .contact__us.active{
+      display: block;
+  }
      aside ul li .active{
         background-color: $accent;
         color: #fff !important;
@@ -154,8 +159,28 @@
               padding-left: 20px;
            }
         }
-
      }
+     .contact__us{
+        .text__contact-us{
+           text-align: center;
+           margin: 0 auto;
+           padding: 0 105px;
+           .main__title-contact{
+            font-family: $userfont;
+            color: $text;
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 35px;
+            text-align: center;
+            padding-bottom: 30px;
+            display: block;
+           }
+           p{
+              color: #999999;
+           }
+        }
+     }
+
  }
 
  @media(max-width: 1400px){

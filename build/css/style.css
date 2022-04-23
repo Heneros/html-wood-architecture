@@ -2353,12 +2353,16 @@ footer {
     display: none; }
   .company .advantages__block {
     display: none; }
+  .company .contact__us {
+    display: none; }
   .company .about__company.active {
     display: block; }
   .company .our__partners.active {
     display: block;
     color: #333; }
   .company .advantages__block.active {
+    display: block; }
+  .company .contact__us.active {
     display: block; }
   .company aside ul li .active {
     background-color: #F88500;
@@ -2443,6 +2447,21 @@ footer {
       padding-top: 20px; }
     .company .our__partners .partner__item .text {
       padding-left: 20px; }
+  .company .contact__us .text__contact-us {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 105px; }
+    .company .contact__us .text__contact-us .main__title-contact {
+      font-family: raleway-wt, sans-serif, Arial;
+      color: #333;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 35px;
+      text-align: center;
+      padding-bottom: 30px;
+      display: block; }
+    .company .contact__us .text__contact-us p {
+      color: #999999; }
 
 @media (max-width: 1400px) {
   .company .tabs__items ul .item__tab {
