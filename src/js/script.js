@@ -142,41 +142,36 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
       $(".js-tabs-head-item").on('click', function () {
-        if (!$(this).hasClass("active")) {
+        if (!$(this).hasClass("active__show")) {
            let btns = $(this).closest(".js-tabs").find(".js-tabs-head-item");
            let count;
            $(btns).each(function () {
-              $(this).removeClass("active");
+              $(this).removeClass("active__show");
            })
   
-           $(this).addClass("active");
+           $(this).addClass("active__show");
   
            $(btns).each(function (index) {
-              if ($(this).hasClass("active")) {
+              if ($(this).hasClass("active__show")) {
                  count = index;
               }
            })
            let blocks = $('.js-tabs-body').find('.js-tabs-body-item');
            $(blocks).each(function (index) {
               if (index == count) {
-                 $(this).addClass("active");
-                 if ($(this).hasClass('js-anim-left')) {
-                    $(this).css('display', 'block')
-                       .css('left', '100px').css('opacity', '0')
-                       .animate({
-                          // transform: "translate3d(0, 0, 0)",
-                          left: '0px',
-                          opacity: '1'
-                       }, 400)
-                 }
+                 $(this).addClass("active__show");
+                 $(".feedback__bottom").addClass("active__show")
               } else {
-                 $(this).removeClass("active");
-                 if ($(this).hasClass('js-anim-left')) {
-                    $(this).css('opacity', '0').css('display', 'none')
-                 }
+                 $(this).removeClass("active__show");
+                 $(".feedback__bottom").removeClass("active__show")
               }
            })
         }
   
      })
+
+
+
+
+
 });

@@ -2331,6 +2331,9 @@ footer {
       padding: 0; }
       .company .tabs__items ul li {
         margin: 21px 0; }
+        .company .tabs__items ul li .active__show {
+          background-color: #F88500;
+          color: #fff; }
       .company .tabs__items ul .item__tab {
         margin: 21px 0;
         font-weight: 500;
@@ -2355,14 +2358,13 @@ footer {
     display: none; }
   .company .contact__us {
     display: none; }
-  .company .about__company.active {
+  .company .active__show {
     display: block; }
-  .company .our__partners.active {
-    display: block;
-    color: #333; }
-  .company .advantages__block.active {
+  .company .feedback__bottom {
+    display: none; }
+  .company .feedback__bottom.active__show {
     display: block; }
-  .company .contact__us.active {
+  .company .active__feedback {
     display: block; }
   .company aside ul li .active {
     background-color: #F88500;
@@ -2444,7 +2446,8 @@ footer {
       font-size: 22px;
       line-height: 26px; }
     .company .our__partners .partner__item p {
-      padding-top: 20px; }
+      padding-top: 20px;
+      color: #333; }
     .company .our__partners .partner__item .text {
       padding-left: 20px; }
   .company .contact__us .text__contact-us {
@@ -2501,6 +2504,10 @@ footer {
       border: unset;
       outline: unset;
       cursor: pointer; }
+  .company .feedback__bottom {
+    background-color: #000000;
+    width: 100%;
+    height: auto; }
 
 @media (max-width: 1400px) {
   .company .tabs__items ul .item__tab {

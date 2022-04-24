@@ -31,7 +31,14 @@
              padding: 0;
              li{
                 margin: 21px 0;
+                .active__show{
+                  background-color: #F88500;
+                  color: #fff;
+               }
+            
+         
              }
+           
            .item__tab{
             margin: 21px 0;
             font-weight: 500;
@@ -60,25 +67,41 @@
          display: none;
      }
      .contact__us{
-      display: none;
+      display: none; 
      }
-     .about__company.active{
-        display: block;
-     }
-     .our__partners.active{
-        display: block;
-        color: $text;
-     }
-     .advantages__block.active{
-         display: block;
-     }
-     .contact__us.active{
+   //   .about__company.active{
+   //      display: block;
+   //   }
+   //   .our__partners.active{
+   //      display: block;
+   //      color: $text;
+   //   } 
+   //   .advantages__block.active{
+   //       display: block;
+   //   }
+   //   .contact__us.active{
+   //    display: block;
+   //  }  
+
+    .active__show{
       display: block;
-  }
+    }
+    .feedback__bottom{
+      display: none;
+   }
+
+    .feedback__bottom.active__show{
+      display: block;
+   }
+
+   .active__feedback{
+      display: block;
+   }
+
      aside ul li .active{
         background-color: $accent;
         color: #fff !important;
-     }      
+     }       
      .title__advantages{
       text-align: center;
       font-family: $userfont;
@@ -154,6 +177,7 @@
            }
            p{
               padding-top: 20px;
+              color: $text;
            }
            .text{
               padding-left: 20px;
@@ -201,8 +225,8 @@
             }
          }
          .btn__contact-us{
-            display: flex;
-            justify-content: center;
+         display: flex;
+         justify-content: center;
          padding: 12px 30px;
          width: 242px;
          background-color: $accent;
@@ -218,6 +242,11 @@
          cursor: pointer;
          }
        }
+     }
+     .feedback__bottom{
+        background-color: #000000;
+        width: 100%;
+        height: auto;
      }
  }
 
