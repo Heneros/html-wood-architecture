@@ -2462,10 +2462,51 @@ footer {
       display: block; }
     .company .contact__us .text__contact-us p {
       color: #999999; }
+  .company .contact__us .contact__us-block {
+    padding: 0 302px; }
+    .company .contact__us .contact__us-block textarea {
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      resize: none; }
+      .company .contact__us .contact__us-block textarea:active {
+        border: 1px solid #F88500; }
+      .company .contact__us .contact__us-block textarea:focus {
+        border: 1px solid #F88500; }
+    .company .contact__us .contact__us-block input {
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+      .company .contact__us .contact__us-block input:active {
+        border: 1px solid #F88500; }
+      .company .contact__us .contact__us-block input:focus {
+        border: 1px solid #F88500; }
+    .company .contact__us .contact__us-block .btn__contact-us {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 12px 30px;
+      width: 242px;
+      background-color: #F88500;
+      color: #fff;
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 145%;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 32px auto;
+      border: unset;
+      outline: unset;
+      cursor: pointer; }
 
 @media (max-width: 1400px) {
   .company .tabs__items ul .item__tab {
-    padding: 10px 90px 10px 28px; } }
+    padding: 10px 90px 10px 28px; }
+  .company .contact__us .contact__us-block {
+    padding: 0 102px; } }
 
 @media (max-width: 1200px) {
   .company .tabs__items .title__tabs {
@@ -2490,7 +2531,14 @@ footer {
     display: block;
     padding-top: 25px; }
   .company .our__partners .partner__item p {
-    text-align: center; } }
+    text-align: center; }
+  .company .contact__us .contact__us-block {
+    padding: 0; }
+  .company .contact__us .text__contact-us {
+    padding: 0; }
+  .company .tabs__items .title__tabs {
+    white-space: nowrap;
+    font-size: 13px; } }
 
 @media (max-width: 765px) {
   .company .advantage__items {
@@ -2502,7 +2550,17 @@ footer {
     overflow-x: auto;
     width: 100%; }
   .company .tabs__items ul .item__tab {
-    padding: 10px 28px 10px 28px; } }
+    padding: 10px 28px 10px 28px; }
+  .company .contact__us {
+    margin-top: 25px; }
+  .company .our__partners {
+    margin-top: 25px; }
+  .company .advantages__block {
+    margin-top: 25px; }
+  .company .about__company {
+    margin-top: 25px; }
+  .company .tabs__items ul li {
+    margin: 21px 5px; } }
 
 /**
  * Swiper 8.0.7

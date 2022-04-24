@@ -179,14 +179,55 @@
               color: #999999;
            }
         }
+        .contact__us-block{
+         padding: 0 302px;
+         textarea{
+            transition: .3s;
+            resize: none;
+            &:active{
+               border: 1px solid $accent;
+            }
+            &:focus{
+               border: 1px solid $accent;
+            }
+         }
+         input{
+            transition: .3s;
+            &:active{
+               border: 1px solid $accent;
+            }
+            &:focus{
+               border: 1px solid $accent;
+            }
+         }
+         .btn__contact-us{
+            display: flex;
+            justify-content: center;
+         padding: 12px 30px;
+         width: 242px;
+         background-color: $accent;
+         color: #fff;
+         font-weight: 800;
+         font-size: 14px;
+         line-height: 145%;
+         text-align: center;
+         text-transform: uppercase;
+         margin: 32px auto;
+         border: unset;
+         outline: unset;
+         cursor: pointer;
+         }
+       }
      }
-
  }
 
  @media(max-width: 1400px){
    .company .tabs__items ul .item__tab{
       padding: 10px 90px 10px 28px;
    }
+   .company .contact__us .contact__us-block {
+      padding: 0 102px;
+  }
  }
  @media(max-width: 1200px){
    .company .tabs__items .title__tabs{
@@ -217,6 +258,16 @@
   .company .our__partners .partner__item p{
      text-align: center;
   }
+  .company .contact__us .contact__us-block {
+   padding: 0;
+}
+.company .contact__us .text__contact-us{
+   padding: 0;
+}
+.company .tabs__items .title__tabs{
+   white-space: nowrap;
+   font-size: 13px;
+}
  }
  @media(max-width: 765px){
    .company .advantage__items{
@@ -230,4 +281,19 @@
    .company .tabs__items ul .item__tab{
       padding: 10px 28px 10px 28px;
    }
+   .company .contact__us{
+      margin-top: 25px;
+   }
+   .company  .our__partners{
+      margin-top: 25px;
+   }
+   .company .advantages__block{
+      margin-top: 25px;
+   }
+   .company .about__company {
+      margin-top: 25px;
+  }
+   .company .tabs__items ul li {
+      margin: 21px 5px;
+  }
  }
