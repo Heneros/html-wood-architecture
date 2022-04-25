@@ -2453,7 +2453,8 @@ footer {
   .company .contact__us .text__contact-us {
     text-align: center;
     margin: 0 auto;
-    padding: 0 105px; }
+    padding: 0 105px;
+    text-transform: uppercase; }
     .company .contact__us .text__contact-us .main__title-contact {
       font-family: raleway-wt, sans-serif, Arial;
       color: #333;
