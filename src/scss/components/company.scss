@@ -1,6 +1,6 @@
  .company{ 
      margin-top: 70px;
-     margin-bottom: 66px;
+
     .main__title-company{
         font-family: $userfont;
         color: $text;
@@ -202,6 +202,7 @@
            }
            p{
               color: #999999;
+              text-transform: none;
            }
         }
         .contact__us-block{
@@ -237,20 +238,66 @@
          line-height: 145%;
          text-align: center;
          text-transform: uppercase;
-         margin: 32px auto;
+         margin: 32px auto; 
          border: unset;
          outline: unset;
          cursor: pointer;
          }
-       }
+       }  
      }
      .feedback__bottom{
-        background-color: #000000;
+        background-color: $dark;
         width: 100%;
-        height: auto;
-        
-     }
+        .information__bottom{
+           display: flex;
+           justify-content: center;
+           flex-direction: column;
+           padding: 70px 0 40px 0;
+           margin: 0 auto;
+           text-align: center;
+        }
+        .title__bottom{
+         font-weight: 800;
+         font-size: 29px;
+         line-height: 34px;
+         color: #fff;
+        }
+        address{
+         font-weight: 400;
+         font-size: 15px;
+         line-height: 170%;
+         color: #989DA5;
+         padding-top: 30px;
+        }
+        .phone__num{
+         font-weight: 300;
+         font-size: 28px;
+         line-height: 165%;
+         color: #fff;
+         text-decoration: none;
 
+        }
+        .map__contact-us{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            margin: 0 173px;
+            padding-bottom: 100px;
+            iframe{
+               width: 100%;
+            }
+        }
+     }
+     .about__company{
+      margin-bottom: 66px;
+     }
+     .advantages__block{
+      margin-bottom: 66px;
+     }
+     .our__partners{
+      margin-bottom: 66px;
+     }
+   
  }
 
  @media(max-width: 1400px){
@@ -300,6 +347,9 @@
    white-space: nowrap;
    font-size: 13px;
 }
+.company .feedback__bottom .map__contact-us{
+   margin: 0 20px;
+}
  }
  @media(max-width: 765px){
    .company .advantage__items{
@@ -312,6 +362,7 @@
    }
    .company .tabs__items ul .item__tab{
       padding: 10px 28px 10px 28px;
+      margin: -5px 0px;
    }
    .company .contact__us{
       margin-top: 25px;
