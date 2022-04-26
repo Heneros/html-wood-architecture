@@ -2,7 +2,7 @@
 margin-top: 82px;
 margin-bottom: 70px;
 .main__title-blog{
-  font-family: 'raleway-wt';
+font-family: $userfont;
 font-style: normal;
 font-weight: 800;
 font-size: 29px;
@@ -51,7 +51,7 @@ padding-bottom: 45px;
         }
         .title__blog-item{
           color: $text ;
-          font-family: 'raleway-wt';
+          font-family: 'raleway-wt, Arial, Helvetica, sans-serif';
           font-weight: 800;
           font-size: 18px;
           line-height: 140%;
@@ -126,6 +126,7 @@ padding-bottom: 45px;
     font-size: 18px;
     line-height: 140%;
     cursor: pointer;
+    color: $text;
   } 
 }
 }

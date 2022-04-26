@@ -16,6 +16,10 @@
             text-transform: uppercase;
         }
     }
+    .field__search {
+        display: flex;
+        justify-content: center;
+    }
     .row{
         margin: 0 auto;
         margin-top: 50px;

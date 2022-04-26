@@ -1,13 +1,15 @@
-/* FONTS LOAD SECTION */
-/* GENERAL CSS SETTINGS */
 ::-webkit-input-placeholder {
   color: #666; }
+
 ::-moz-placeholder {
   color: #666; }
+
 :-ms-input-placeholder {
   color: #666; }
+
 ::-ms-input-placeholder {
   color: #666; }
+
 ::placeholder {
   color: #666; }
 
@@ -36,6 +38,15 @@ body {
   min-width: 320px;
   position: relative;
   overflow-x: hidden; }
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: #000000; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 9em;
+  background-color: #F88500; }
 
 @font-face {
   src: url("../fonts/raleway/raleway-v22-cyrillic-300.woff2") format("woff2");
@@ -1141,7 +1152,8 @@ span.top-menu__link {
       font-size: 14px;
       line-height: 23.8px;
       font-weight: 400;
-      text-align: center; }
+      text-align: center;
+      margin: 0 20px; }
     .our__partners .item__our-partner .company__name-partner {
       color: #F88500;
       font-weight: 800; }
@@ -1162,7 +1174,7 @@ span.top-menu__link {
   margin-top: 82px;
   margin-bottom: 70px; }
   .our__blog .main__title-blog {
-    font-family: 'raleway-wt';
+    font-family: raleway-wt, sans-serif, Arial;
     font-style: normal;
     font-weight: 800;
     font-size: 29px;
@@ -1209,7 +1221,7 @@ span.top-menu__link {
             text-transform: uppercase; }
         .our__blog .slider__blog-home .swiper-wrapper .item__slider-blog .title__blog-item {
           color: #333;
-          font-family: 'raleway-wt';
+          font-family: 'raleway-wt, Arial, Helvetica, sans-serif';
           font-weight: 800;
           font-size: 18px;
           line-height: 140%;
@@ -1273,7 +1285,8 @@ span.top-menu__link {
       font-weight: 500;
       font-size: 18px;
       line-height: 140%;
-      cursor: pointer; }
+      cursor: pointer;
+      color: #333; }
 
 .block__image-adaptive {
   display: none; }
@@ -2016,6 +2029,13 @@ footer {
       line-height: 28px;
       text-align: center;
       text-transform: uppercase; }
+  .our-services .field__search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .our-services .row {
     margin: 0 auto;
     margin-top: 50px;
