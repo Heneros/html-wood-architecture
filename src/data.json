@@ -1,0 +1,15 @@
+{
+	"posts": [{
+		"id": 1,
+		"name": "First Post",
+		"age": 43
+	}, {
+		"id": 2,
+		"name": "Second Post",
+		"age": 33
+	}, {
+		"id": 3,
+		"name": "Third Post",
+		"age": 34
+	}]
+}

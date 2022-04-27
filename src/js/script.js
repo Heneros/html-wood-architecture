@@ -172,6 +172,12 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 
+     $.getJSON('../data.json', function(data) {
+        for(var i=0;i<data.posts.length;i++){
+            $('#results-search').append('<span>'+  data.posts[i].name +  '</span>');
+        }
+    })
 
 
 });
+
