@@ -173,14 +173,16 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
      $.getJSON('../data.json', function(data) {
-        // for(var i=0;i<data.posts.length;i++){
-        //     $('#items__service > .item__service > .item__text').append('<span class="title">'+  data.posts[i].name +  '</span>');
-        // }
-        $.each(data, function (index, data) {
-            console.log(data.posts.name)
+        var item_service = [];
+        $.each(data, function(key, value){
+            item_service += "<div class='item__service'> <div class='item__text'>";
+            item_service += "<span class='title'>" + value.name + "</span>";
+            item_service += "<p>" + value.description + "</p>";
+            item_service += "<div class='item__img'><img src='"+ value.description + "'></div>";
+            item_service += "</div></div>";
         })
-        
-    })
+        $("#items__service").append(item_service)
+     });
 
 
 });
