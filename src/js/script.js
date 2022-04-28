@@ -173,9 +173,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
      $.getJSON('../data.json', function(data) {
-        for(var i=0;i<data.posts.length;i++){
-            $('#results-search').append('<span>'+  data.posts[i].name +  '</span>');
-        }
+        // for(var i=0;i<data.posts.length;i++){
+        //     $('#items__service > .item__service > .item__text').append('<span class="title">'+  data.posts[i].name +  '</span>');
+        // }
+        $.each(data, function (index, data) {
+            console.log(data.posts.name)
+        })
+        
     })
 
 
