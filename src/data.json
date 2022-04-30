@@ -1,17 +1,17 @@
 {
 	"posts": [{
 		"id": 1,
-		"name": "First Post",
+		"name": "One Post",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, at adipisci fuga quam quasi eaque consequatur perspiciatis. Officiis odit facilis nesciunt quae alias quaerat expedita!",
 		"image": "images/services/service-1.png"
 	}, {
 		"id": 2,
-		"name": "Second Post",
+		"name": "Two Post",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, at adipisci fuga quam quasi eaque consequatur perspiciatis. Officiis odit facilis nesciunt quae alias quaerat expedita!",
 		"image": "images/services/service-2.png"
 	}, {
 		"id": 3,
-		"name": "Third Post",
+		"name": "Three Post",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, at adipisci fuga quam quasi eaque consequatur perspiciatis. Officiis odit facilis nesciunt quae alias quaerat expedita!",
 		"image": "images/services/service-3.png"
 	}, {
@@ -24,6 +24,11 @@
 		"name": "Five Post",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, at adipisci fuga quam quasi eaque consequatur perspiciatis. Officiis odit facilis nesciunt quae alias quaerat expedita!",
 		"image": "images/services/service-5.png"
+	}, {
+		"id": 6,
+		"name": "Six Post",
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, at adipisci fuga quam quasi eaque consequatur perspiciatis. Officiis odit facilis nesciunt quae alias quaerat expedita!",
+		"image": "images/services/service-6.png"
 	}
 ]
 }

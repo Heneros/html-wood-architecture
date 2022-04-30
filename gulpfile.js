@@ -103,7 +103,7 @@ gulp.task('js', function(){
     .pipe(babel({
       presets: ["@babel/preset-env"]
     }))
-    .pipe(uglify()) 
+    // .pipe(uglify()) 
     .pipe(concat(('script.js')))
     .pipe(gulp.dest('build/js'))
     .pipe(browserSync.reload({stream: true}));

@@ -148,9 +148,7 @@ document.addEventListener('DOMContentLoaded', function(){
            $(btns).each(function () {
               $(this).removeClass("active__show");
            })
-  
            $(this).addClass("active__show");
-  
            $(btns).each(function (index) {
               if ($(this).hasClass("active__show")) {
                  count = index;
@@ -167,8 +165,9 @@ document.addEventListener('DOMContentLoaded', function(){
               }
            })
         }
-  
-     })
+     });
+
+
         var artistList = $("#items__service");
         var url = "../data.json";
         $.getJSON(url, function(data) {
@@ -180,8 +179,23 @@ document.addEventListener('DOMContentLoaded', function(){
             artistList.append(list);
           }
         });
-   
 
 
+        // $.ajaxSetup({ cache: false });
+        $('#search').keyup(function(){
+         $('#results-search').html('');
+         $('#state').val('');
+         var searchField = $('#search').val();
+         var expression = new RegExp(searchField, "i");
+         $.getJSON('../data.json', function(data) {
+          $.each(data, function(key, value){
+           if (data.name.search(expression) != -1){
+            $('#results-search').append('<li class="list-group-item link-class"><img src="' + value.name + '"</li>');
+           }
+          });   
+         });
+        });
+
+  
 });
 
