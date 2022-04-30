@@ -1,15 +1,29 @@
-[
-	{
+{
+	"posts": [{
 		"id": 1,
 		"name": "First Post",
-		"description": "labore vero sapiente, in sed quas iusto placeat porro blanditiis. Doloribus accusamus laborum temporibus, necessitatibus tempora iure laboriosam ex repellendus voluptatem iusto repudiandae accusantium saepe voluptate. Voluptatum iure sunt ipsam deleniti atque esse. Soluta dignissimos tempora ipsa illo corrupti natus. Odio."
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, at adipisci fuga quam quasi eaque consequatur perspiciatis. Officiis odit facilis nesciunt quae alias quaerat expedita!",
+		"image": "images/services/service-1.png"
 	}, {
 		"id": 2,
 		"name": "Second Post",
-		"description": "ut cupiditate voluptatem omnis accusantium sint quam perferendis, ullam nesciunt impedit corporis? Fuga nemo debitis suscipit illum tempora, quos autem voluptatibus enim perferendis unde eligendi,"
-	},{
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, at adipisci fuga quam quasi eaque consequatur perspiciatis. Officiis odit facilis nesciunt quae alias quaerat expedita!",
+		"image": "images/services/service-2.png"
+	}, {
 		"id": 3,
-		"name": "This Post",
-		"description": " Consequuntur, at adipisci fuga quam quasi eaque consequatur perspiciatis. Officiis odit facilis nesciunt quae"
+		"name": "Third Post",
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, at adipisci fuga quam quasi eaque consequatur perspiciatis. Officiis odit facilis nesciunt quae alias quaerat expedita!",
+		"image": "images/services/service-3.png"
+	}, {
+		"id": 4,
+		"name": "Four Post",
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, at adipisci fuga quam quasi eaque consequatur perspiciatis. Officiis odit facilis nesciunt quae alias quaerat expedita!",
+		"image": "images/services/service-4.png"
+	}, {
+		"id": 5,
+		"name": "Five Post",
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, at adipisci fuga quam quasi eaque consequatur perspiciatis. Officiis odit facilis nesciunt quae alias quaerat expedita!",
+		"image": "images/services/service-5.png"
 	}
 ]
+}

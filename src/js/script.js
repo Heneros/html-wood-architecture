@@ -169,20 +169,18 @@ document.addEventListener('DOMContentLoaded', function(){
         }
   
      })
-
-
-
-     $.getJSON('../data.json', function(data) {
-        var item_service = [];
-        $.each(data, function(key, value){
-            item_service += "<div class='item__service'> <div class='item__text'>";
-            item_service += "<span class='title'>" + value.name + "</span>";
-            item_service += "<p>" + value.description + "</p>";
-            item_service += "<div class='item__img'><img src='"+ value.description + "'></div>";
-            item_service += "</div></div>";
-        })
-        $("#items__service").append(item_service)
-     });
+        var artistList = $("#items__service");
+        var url = "../data.json";
+        $.getJSON(url, function(data) {
+          var posts = data.posts.map(function(item ) {
+            return "<div class='item__service'><div class='item__text'><span class='title'>" + item.name + "</span><p>"+ item.description +  "</p></div><div class='item__img'><img src='" + item.image + "'></div></div>";
+          });
+          if (posts.length) {
+            var list = $(artistList).html(posts);
+            artistList.append(list);
+          }
+        });
+   
 
 
 });
