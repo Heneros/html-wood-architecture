@@ -9842,7 +9842,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var artistList = $("#items__service");
   var url = "../data.json";
   $.getJSON(url, function (data) {
-    var posts = data.posts.map(function (item) {
+    var posts = data.map(function (item) {
       return "<div class='item__service'><div class='item__text'><span class='title'>" + item.name + "</span><p>" + item.description + "</p></div><div class='item__img'><img src='" + item.image + "'></div></div>";
     });
 
@@ -9850,17 +9850,18 @@ document.addEventListener('DOMContentLoaded', function () {
       var list = $(artistList).html(posts);
       artistList.append(list);
     }
-  }); // $.ajaxSetup({ cache: false });
-
+  });
+  $.ajaxSetup({
+    cache: false
+  });
   $('#search').keyup(function () {
-    $('#results-search').html('');
-    $('#state').val('');
+    $('#items__service').html('');
     var searchField = $('#search').val();
     var expression = new RegExp(searchField, "i");
     $.getJSON('../data.json', function (data) {
       $.each(data, function (key, value) {
-        if (data.name.indexOf(expression) != -1) {
-          $('#results-search').append('<li class="list-group-item link-class"><img src="' + value.name + '"</li>');
+        if (value.name.search(expression) != -1 || value.description.search(expression) != -1) {
+          $('#items__service').append("<div class='item__service'><div class='item__text'><span class='title'>" + value.name + "</span><p>" + value.description + "</p></div><div class='item__img'><img src='" + value.image + "'></div></div>");
         }
       });
     });

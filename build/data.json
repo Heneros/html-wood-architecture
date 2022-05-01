@@ -1,5 +1,5 @@
-{
-	"posts": [{
+[
+	 {
 		"id": 1,
 		"name": "One Post",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, at adipisci fuga quam quasi eaque consequatur perspiciatis. Officiis odit facilis nesciunt quae alias quaerat expedita!",
@@ -31,4 +31,3 @@
 		"image": "images/services/service-6.png"
 	}
 ]
-}
