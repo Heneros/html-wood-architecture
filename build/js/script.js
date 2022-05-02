@@ -9866,4 +9866,12 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
+  setTimeout(function () {
+    $(".loading").animate({
+      width: "100%",
+      top: '-100vh'
+    }, 1000, function () {
+      $(".loading").css("display", "none");
+    });
+  });
 });
