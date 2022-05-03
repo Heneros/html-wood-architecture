@@ -164,51 +164,58 @@
 	will-change: transform;
 }
   
-	.agreement {
-		display: block;
-		position: relative;
-		cursor: pointer;
-		font-size: 22px;
-		input[type='checkbox']  {
-		width: unset;
-		cursor: pointer;
-		visibility: hidden;
-	 }
-	 .marker{
-		 position: absolute;
-		 top: 0;
-		 left: 0;
-		 height: 25px;
-		 width: 25px;
-		 background-color: lightgray;
-	 }
-   }
-   .agreement:hover input ~ .marker {
-	background-color: gray;
+.micromodal-slide {
+	textarea	{
+		resize: unset;
+	}
+}
+
+
+
+.agreement {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 25px;
+  width: unset;
+  input {
+	visibility: hidden;
+	cursor: pointer;
+	width: unset;
   }
-  
-  .agreement input:checked ~ .marker {
-	background-color: $text;
-  }
-  .marker:after {
-	content: "";
+  .marker {
 	position: absolute;
-	display: none;
+	top: 7px;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: lightgray;
   }
-  .agreement input:checked ~ .marker:after {
-	display: block;
-  }
-  .agreement .marker:after {
-	left: 9px;
-	top: 5px;
-	width: 5px;
-	height: 10px;
-	border: solid white;
-	border-width: 0 3px 3px 0;
-	transform: rotate(45deg);
-  }
-   .micromodal-slide {
-	   textarea	{
-		   resize: unset;
-	   }
-   }
+}
+
+.agreement:hover input ~ .marker {
+  background-color: gray;
+}
+
+.agreement input:checked ~ .marker {
+  background-color: $accent;
+}
+.marker:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.agreement input:checked ~ .marker:after {
+  display: block;
+}
+.agreement .marker:after {
+    left: 10px;
+    top: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}

@@ -430,48 +430,46 @@ form input, form textarea {
 .micromodal-slide .modal__overlay {
   will-change: transform; }
 
+.micromodal-slide textarea {
+  resize: unset; }
+
 .agreement {
   display: block;
   position: relative;
   padding-left: 35px;
   margin-bottom: 20px;
   cursor: pointer;
-  font-size: 25px; }
-
-/* Hide the default checkbox */
-.agreement input {
-  visibility: hidden;
-  cursor: pointer; }
-
-/* Create a custom checkbox */
-.marker {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: lightgray; }
+  font-size: 25px;
+  width: unset; }
+  .agreement input {
+    visibility: hidden;
+    cursor: pointer;
+    width: unset; }
+  .agreement .marker {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: lightgray; }
 
 .agreement:hover input ~ .marker {
   background-color: gray; }
 
 .agreement input:checked ~ .marker {
-  background-color: blue; }
+  background-color: #F88500; }
 
-/* Create the marker/indicator (hidden when not checked) */
 .marker:after {
   content: "";
   position: absolute;
   display: none; }
 
-/* Show the marker when checked */
 .agreement input:checked ~ .marker:after {
   display: block; }
 
-/* Style the marker/indicator */
 .agreement .marker:after {
-  left: 9px;
-  top: 5px;
+  left: 10px;
+  top: 6px;
   width: 5px;
   height: 10px;
   border: solid white;
@@ -479,9 +477,6 @@ form input, form textarea {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg); }
-
-.micromodal-slide textarea {
-  resize: unset; }
 
 .navbar {
   position: absolute;
