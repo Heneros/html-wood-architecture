@@ -13,10 +13,10 @@
 	<link rel="stylesheet" href="css/style.css">
 </head> 
 <body>
-	<div class="loading">
+	<!-- <div class="loading">
 		<div class="sub__loading"></div>
 		<p>Loading...</p>
-	</div>
+	</div> -->
 	<div class="navbar">
 		<div class="container">
 			<div class="row">
@@ -114,7 +114,7 @@
 				<p>Call us or leave a request from the site. <br>
 					We will call you back within 1000000 minutes.</p>
 					<a href="tel:+123456" class="phone-big home-callback__phone" title="Call">+0 (123) 555-31-91</a>
-			          <button class="button home-callback__button" data-custom-open="modal" data-form="Форма секции" >Apply Now</button>
+			          <button class="button home-callback__button" data-custom-open="modal" data-form="Form section" >Apply Now</button>
 				</div>
 		</div>
 	</div>
@@ -486,13 +486,21 @@
 				<input type="tel" name="Phone" placeholder="Your Phone...">
 				<textarea name="Commentary" rows="4" placeholder="Commentary"></textarea>
 				<input type="hidden" name="form">
+				<div class="agreement">
+					<input type="checkbox" name="agreement" id="agreement">
+					<label for="agreement">
+						I agreed with terms of use
+						<span class="marker"></span>
+				</label>
+				</div>
 				<div class="modal__footer">
 					<button class="button">Send</button>
 				</div>
+			
 			</form>
 		</div>
 	</div>
-</div>  
+</div>   
 <!---Modal Window End-->
 
 <!---Up-->
