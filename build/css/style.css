@@ -452,6 +452,8 @@ form input, form textarea {
     height: 25px;
     width: 25px;
     background-color: lightgray; }
+  .agreement .text {
+    margin-left: -18px; }
 
 .agreement:hover input ~ .marker {
   background-color: gray; }
@@ -477,6 +479,11 @@ form input, form textarea {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg); }
+
+#name-error,
+#phone-error,
+#commentary-error {
+  color: red; }
 
 .navbar {
   position: absolute;

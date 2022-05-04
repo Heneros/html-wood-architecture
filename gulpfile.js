@@ -16,6 +16,7 @@ import concat  from 'gulp-concat';
 import bulk from 'gulp-sass-bulk-importer';
 import optipng from 'optipng-bin';
 
+
 gulp.task('serve', function ()  {
    return browserSync.init({
         server: {
@@ -28,10 +29,10 @@ gulp.task('serve', function ()  {
 
 
 const scripts = [
-    "node_modules/micromodal/dist/micromodal.min.js",
+   "node_modules/micromodal/dist/micromodal.min.js",
    "node_modules/jquery/dist/jquery.min.js",
    "node_modules/swiper/swiper-bundle.min.js",
-
+   "node_modules/jquery-validation/dist/jquery.validate.min.js",
    "src/js/script.js"
 ];
 

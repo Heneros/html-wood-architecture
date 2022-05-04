@@ -34,6 +34,7 @@
     "imagemin-jpeg-recompress": "^7.0.0",
     "imagemin-pngquant": "^9.0.2",
     "jquery": "^3.6.0",
+    "jquery-validation": "^1.19.3",
     "micromodal": "^0.4.10",
     "swiper": "^8.0.7"
   },

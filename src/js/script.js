@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function(){
         }
      });
 
-
+    //////Display posts from data.json
         var artistList = $("#items__service");
         var url = "../data.json";
         $.getJSON(url, function(data) {
@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function(){
             artistList.append(list);
           }
         });
-
+    ///Search by value
         $.ajaxSetup({ cache: false });
         $('#search').keyup(function(){
             $('#items__service').html('');
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function(){
              });   
             });
         }) 
-
+    ///Loader
     setTimeout(function(){
         $(".loading").animate({
             width: "100%",
@@ -203,7 +203,36 @@ document.addEventListener('DOMContentLoaded', function(){
           $(".loading").css("display", "none")
         }
       )
-    })
-  
+    });
+    
+
+    $("#form").validate({
+        rules: {
+          name : {
+            required: true,
+            minlength: 3
+          },
+          phone:{
+            required: true,
+            minlength: 8
+          },
+          commentary:{
+            required: true,
+            minlength: 12
+          },
+        },
+        messages : {
+          name: {
+            minlength: "Name should be at least 3 characters"
+          },
+          phone: {
+            minlength: "Phone should be at least 8 symbols"
+          },
+          commentary: {
+            minlength: "Commentary field should be at least 12 symbols"
+          }
+        }
+      });
+
 });
 
