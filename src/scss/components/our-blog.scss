@@ -27,6 +27,7 @@ padding-bottom: 45px;
         border: 1px solid #EEEEEE;
         box-sizing: border-box;
         border-radius: 0px 5px;
+
         .image__blog{
           border-radius: 0px 5px;
           position: relative;
@@ -41,8 +42,7 @@ padding-bottom: 45px;
             background-color: $accent;
             border-radius: 0px 5px;
             padding: 4px 10px 5px;
-            font-family: 'roboto-wt';
-            // font-family: 'roboto-wt', Arial, Helvetica, sans-serif;
+            font-family: $userfont;
             font-weight: 700;
             font-size: 15px;
             line-height: 10px;
@@ -51,7 +51,7 @@ padding-bottom: 45px;
         }
         .title__blog-item{
           color: $text ;
-          font-family: 'raleway-wt, Arial, Helvetica, sans-serif';
+          font-family: $userfont;
           font-weight: 800;
           font-size: 18px;
           line-height: 140%;

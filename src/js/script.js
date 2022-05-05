@@ -205,7 +205,6 @@ document.addEventListener('DOMContentLoaded', function(){
       )
     });
     
-
     $("#form").validate({
         rules: {
           name : {
@@ -233,6 +232,8 @@ document.addEventListener('DOMContentLoaded', function(){
           }
         }
       });
+
+
 
 });
 

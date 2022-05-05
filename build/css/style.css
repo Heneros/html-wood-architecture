@@ -1372,7 +1372,7 @@ span.top-menu__link {
             text-transform: uppercase; }
         .our__blog .slider__blog-home .swiper-wrapper .item__slider-blog .title__blog-item {
           color: #333;
-          font-family: 'raleway-wt, Arial, Helvetica, sans-serif';
+          font-family: raleway-wt, sans-serif, Arial;
           font-weight: 800;
           font-size: 18px;
           line-height: 140%;
