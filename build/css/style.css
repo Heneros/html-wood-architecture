@@ -1256,9 +1256,9 @@ span.top-menu__link {
   .item-advantages__desc {
     display: block; } }
 
-.our__partners {
+.our-partners {
   color: #fff; }
-  .our__partners .our__partners-title {
+  .our-partners .our-partners__title {
     text-align: center;
     margin: 0 auto;
     font-weight: 800;
@@ -1266,12 +1266,12 @@ span.top-menu__link {
     line-height: 34px;
     color: #fff;
     padding-top: 78px; }
-  .our__partners .our__partners-items {
+  .our-partners .our-partners__items {
     margin: 57px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  .our__partners .item__our-partner {
+  .our-partners .our-partners__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1286,7 +1286,7 @@ span.top-menu__link {
         -ms-flex-align: center;
             align-items: center;
     position: relative; }
-    .our__partners .item__our-partner .image__block {
+    .our-partners .our-partners__item .our-partners-image {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1294,18 +1294,18 @@ span.top-menu__link {
           -ms-flex-pack: center;
               justify-content: center;
       padding-bottom: 22px; }
-      .our__partners .item__our-partner .image__block img {
+      .our-partners .our-partners__item .our-partners-image img {
         max-width: 156px;
         height: 55px;
         -o-object-fit: fill;
            object-fit: fill; }
-    .our__partners .item__our-partner .description__item-partner {
+    .our-partners .our-partners__item .our-partners__description {
       font-size: 14px;
       line-height: 23.8px;
       font-weight: 400;
       text-align: center;
       margin: 0 20px; }
-    .our__partners .item__our-partner .company__name-partner {
+    .our-partners .our-partners__item .our-partners__company-name {
       color: #F88500;
       font-weight: 800; }
 
@@ -1365,7 +1365,7 @@ span.top-menu__link {
             background-color: #F88500;
             border-radius: 0px 5px;
             padding: 4px 10px 5px;
-            font-family: 'roboto-wt';
+            font-family: raleway-wt, sans-serif, Arial;
             font-weight: 700;
             font-size: 15px;
             line-height: 10px;
