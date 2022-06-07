@@ -10455,7 +10455,7 @@ document.addEventListener('DOMContentLoaded', function () {
       disableOnInteraction: false
     }
   });
-  var blogSlider = new Swiper('.slider__blog', {
+  var blogSlider = new Swiper('.our-blog__slider-blog', {
     speed: 400,
     slidesPerView: 1,
     // slidesPerView: "auto",
@@ -10463,7 +10463,7 @@ document.addEventListener('DOMContentLoaded', function () {
     spaceBetween: 20,
     grabCursor: true,
     pagination: {
-      el: ".blog-slider__pagination"
+      el: ".our-blog__pagination"
     },
     breakpoints: {
       599: {
