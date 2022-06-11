@@ -1,5 +1,8 @@
 .our-partners {
     color: #fff;
+    background-attachment: fixed;
+    position: relative;
+    left: 14px;
 
     .our-partners__title {
         text-align: center;
@@ -52,12 +55,12 @@
 }
 
 @media(max-width: 765px) {
-    .our__partners .our__partners-items {
+    .our-partners .our-partners__items {
         flex-direction: column;
         align-items: center;
     }
 
-    .our__partners .item__our-partner {
+    .our-partners .our-partners__item {
         margin: 25px 0;
     }
 }

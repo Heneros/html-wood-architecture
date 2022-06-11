@@ -1,90 +1,51 @@
-footer{
+.footer {
     background-color: $deep;
     padding-bottom: 73px;
-    .left__side-footer{
+
+    .footer__left-side {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
         grid-gap: 35px;
         margin-top: 74px;
-        .logo__link{
+
+        .logo__link {
             color: rgba(255, 255, 255, 0.7);
-            i{
+
+            i {
                 border: 2px solid rgba(255, 255, 255, 0.7);
             }
         }
-        .about__us-text{
+
+        .footer__text-about-us {
             padding-top: 40px;
-          .title__aboutUs-footer{
-            color: #fff;
-            font-family: "raleway-wt";
-            font-weight: 900;
-            font-size: 18px;
-            line-height: 21px;
-            text-transform: uppercase;
-          }
-          p{
-            padding-top: 20px;
-            color: rgba(255, 255, 255, 0.7);
-          }
-        }  
-       .menu__footer{
-        font-family: "raleway-wt";
-        .title__aboutUs-footer{
-            color: #fff;
-            font-family: "raleway-wt";
-            font-weight: 900;
-            font-size: 18px;
-            line-height: 21px;
-            text-transform: uppercase;
-            &:after{
-                content: "";
-                background-color: $accent;
-                width: 25px;
-                height: 3px;
-                display: block;
-                position: relative;
-                top: 20px;
-                border-radius: 0px 5px;
-            }
-        }
-        ul{
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            padding-top: 27px;
-            li{
-                padding-top: 17px;
-            }
-            a{
-            color: rgba(255, 255, 255, 0.7);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 16px;
-            transition: ease-out .3s;
-            letter-spacing: .8px;
-            &:hover{
-                color: $accent;
-                text-decoration-line: underline;
-             }
-          }
-        }
-       }
-    }
-    .right__side-footer{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
-        grid-gap: 35px;
-        margin-top: 74px;
-        .services__footer{
-            .title__aboutUs-footer{
+
+            .footer__title-about-us {
                 color: #fff;
-                font-family: "raleway-wt";
+                font-family: $userfont;
                 font-weight: 900;
                 font-size: 18px;
                 line-height: 21px;
                 text-transform: uppercase;
-                &:after{
+            }
+
+            p {
+                padding-top: 20px;
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+
+        .footer-menu {
+            font-family: $userfont;
+
+            .footer__title-about-us {
+                color: #fff;
+                font-family: $userfont;
+                font-weight: 900;
+                font-size: 18px;
+                line-height: 21px;
+                text-transform: uppercase;
+
+                &:after {
                     content: "";
                     background-color: $accent;
                     width: 25px;
@@ -95,58 +56,131 @@ footer{
                     border-radius: 0px 5px;
                 }
             }
-            ul{
+
+            ul {
                 list-style-type: none;
                 padding: 0;
                 margin: 0;
                 padding-top: 27px;
-                li{
+
+                li {
                     padding-top: 17px;
                 }
-                a{
-                color: rgba(255, 255, 255, 0.7);
-                text-decoration: none;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 16px;
-                transition: ease-out .3s;
-                letter-spacing: .8px;
-                &:hover{
-                    color: $accent;
-                    text-decoration-line: underline;
-                 }
-              }
+
+                a {
+                    color: rgba(255, 255, 255, 0.7);
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    transition: ease-out .3s;
+                    letter-spacing: .8px;
+
+                    &:hover {
+                        color: $accent;
+                        text-decoration-line: underline;
+                    }
+                }
             }
         }
-        .social__networks{
-            .title__aboutUs-footer{
+    }
+
+    .footer__right-side {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+        grid-gap: 35px;
+        margin-top: 74px;
+
+        .footer-services {
+            .footer__title-about-us {
+                color: #fff;
+                font-family: $userfont;
+                font-weight: 900;
+                font-size: 18px;
+                line-height: 21px;
+                text-transform: uppercase;
+
+                &:after {
+                    content: "";
+                    background-color: $accent;
+                    width: 25px;
+                    height: 3px;
+                    display: block;
+                    position: relative;
+                    top: 20px;
+                    border-radius: 0px 5px;
+                }
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                padding-top: 27px;
+
+                li {
+                    padding-top: 17px;
+                }
+
+                a {
+                    color: rgba(255, 255, 255, 0.7);
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    transition: ease-out .3s;
+                    letter-spacing: .8px;
+                    font-family: $userfont;
+
+                    &:hover {
+                        color: $accent;
+                        text-decoration-line: underline;
+                    }
+                }
+            }
+        }
+
+        .footer__social-networks {
+            .footer__title-about-us {
                 color: #fff;
                 font-family: "raleway-wt";
                 font-weight: 900;
                 font-size: 18px;
                 line-height: 21px;
                 text-transform: uppercase;
-    
+
             }
-            p{
+
+            p {
                 padding-top: 42px;
                 color: rgba(255, 255, 255, 0.7);
             }
-            .nav__social-footer{
-                display: inline-block;
+
+            .footer__nav-social {
+                // display: inline-block;
                 margin-top: 22px;
-                .nav-social__item{
-                border: 1px solid rgba(255, 255, 255, 0.25);
-                padding: 11px;
-                box-sizing: border-box;
-                border-radius: 0px 5px;
-                transition: ease-in-out .5s;
-                margin-right: 6px;
-                    img{
-                       max-height: 15.9px;
+
+                .footer__nav-social-item {
+                    border: 1px solid rgba(255, 255, 255, 0.25);
+                    padding: 11px;
+                    box-sizing: border-box;
+                    border-radius: 0px 5px;
+                    transition: ease-in-out .5s;
+                    margin-right: 6px;
+
+
+                    img {
+                        max-height: 15.9px;
+                        width: 100%;
+                        max-height: 16.5px;
+                        max-width: 20px;
+                        opacity: 0.75;
+
+                        transition: opacity 0.25s ease-out;
                     }
-                    &:hover{
-                      background-color: $accent;
+
+                    &:hover {
+                        background-color: $accent;
                     }
 
                 }
@@ -155,58 +189,76 @@ footer{
     }
 }
 
-@media(max-width: 768px){
-    footer .left__side-footer .menu__footer{
+@media(max-width: 768px) {
+    .footer .footer__left-side .footer-menu {
         text-align: center;
     }
-    footer .left__side-footer .menu__footer .title__aboutUs-footer:after{
+
+    footer .footer__left-side .footer-menu .footer__title-about-us:after {
         margin: auto;
     }
-    .services__footer{
+
+    .footer-services {
         text-align: center;
     }
-    footer .right__side-footer .services__footer .title__aboutUs-footer:after{
+
+    .footer .footer__right-side .footer-services .footer__title-about-us:after {
         margin: auto;
     }
 }
 
-@media(max-width: 599px){
-    footer .left__side-footer{
+@media(max-width: 599px) {
+    .footer .footer__left-side {
         grid-template-columns: 1fr;
     }
-    .about__us-footer{
-      margin: 0 70px;
-    }
-    footer .left__side-footer .about__us-text .title__aboutUs-footer{
-        display: flex;
-        justify-content: center;
-    }
-    footer .left__side-footer .about__us-text p{
-        text-align: center;
-    }
-    .left__side-footer .logo{
-       text-align: center;
-    }
-    footer .right__side-footer{
-        grid-template-columns: 1fr;
-    }
-    .social__networks{
+
+    .footer-about-us {
         margin: 0 70px;
     }
-    footer .right__side-footer .social__networks .title__aboutUs-footer{
+
+    footer .footer__left-side .footer__text-about-us .footer__title-about-us {
         display: flex;
         justify-content: center;
     }
-    footer .right__side-footer .social__networks p{
+
+    .footer .footer__left-side .footer__text-about-us p {
         text-align: center;
     }
-    footer .nav__social-footer{
+
+    .footer__left-side .logo {
+        text-align: center;
+    }
+
+    .footer .footer__right-side {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__social-networks {
+        margin: 0 70px;
+    }
+
+    .footer .footer__right-side .footer__social-networks .footer__title-about-us {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer .footer__right-side .footer__social-networks p {
+        text-align: center;
+    }
+
+    .footer .footer__nav-social-item {
         display: flex !important;
         justify-content: center;
     }
+
+    .footer .footer__right-side .footer__social-networks .footer__nav-social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-.up{
+.up {
     position: fixed;
     right: 27px;
     bottom: 25px;
@@ -214,8 +266,8 @@ footer{
     display: none;
 }
 
-@media(max-width: 410px){
-    footer .right__side-footer .social__networks .title__aboutUs-footer{
+@media(max-width: 410px) {
+    .footer .footer__right-side .footer__social-networks .footer__title-about-us {
         text-align: center;
     }
 }
