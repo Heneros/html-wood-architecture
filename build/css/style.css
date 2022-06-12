@@ -21,13 +21,16 @@
   background-color: #F88500;
   color: #fff; }
 
-input, textarea {
+input,
+textarea {
   outline: none; }
 
-input:focus:required:invalid, textarea:focus:required:invalid {
+input:focus:required:invalid,
+textarea:focus:required:invalid {
   border-color: red; }
 
-input:required:valid, textarea:required:valid {
+input:required:valid,
+textarea:required:valid {
   border-color: green; }
 
 body {
@@ -65,31 +68,29 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   z-index: 9999; }
-  .loading .sub__loading {
+  .loading .loading__sub {
     position: relative;
     width: 140px;
     height: 140px;
     background-color: #F88500;
     border-radius: 50%;
     -webkit-animation: circularAnimation 1.5s infinite linear;
-            animation: circularAnimation 1.5s infinite linear; }
-    .loading .sub__loading::after {
+            animation: circularAnimation 1.5s infinite linear;
+    margin: 0 auto; }
+    .loading .loading__sub::after {
       width: 30%;
       height: 30%;
       background-color: transparent;
       border-color: rgba(255, 255, 255, 0.7);
       border-left-color: transparent; }
-    .loading .sub__loading::before {
+    .loading .loading__sub::before {
       border: 10px solid rgba(255, 255, 255, 0.35);
       background-color: rgba(255, 255, 255, 0.2);
       border-left-color: transparent;
       border-top-color: transparent; }
   .loading p {
-    margin: 32px;
+    margin: 25px auto;
     font-size: 1.7em;
     color: #fff;
     letter-spacing: 1px;
@@ -97,8 +98,8 @@ body {
     -webkit-animation: opacityAnimation 2s infinite linear;
             animation: opacityAnimation 2s infinite linear; }
 
-.sub__loading::after,
-.sub__loading::before {
+.loading__sub::after,
+.loading__sub::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -606,7 +607,7 @@ span.top-menu__link {
 .nav-social__item:hover img {
   opacity: 1; }
 
-.navbar__white .menu-toggle {
+.navbar-white .menu-toggle {
   background-image: url("../images/interface/menu-dark.svg"); }
 
 @media (max-width: 992px) {
@@ -638,7 +639,7 @@ span.top-menu__link {
     background-color: rgba(196, 196, 196, 0.05); }
   .menu-toggle {
     display: block; }
-  .navbar__white .top-menu__link {
+  .navbar-white .top-menu__link {
     color: #fff !important; } }
 
 @media (max-width: 1200px) {
@@ -1258,9 +1259,7 @@ span.top-menu__link {
 
 .our-partners {
   color: #fff;
-  background-attachment: fixed;
-  position: relative;
-  left: 14px; }
+  background-attachment: fixed; }
   .our-partners .our-partners__title {
     text-align: center;
     margin: 0 auto;
@@ -1691,61 +1690,61 @@ span.top-menu__link {
   .footer .footer__right-side .footer__social-networks .footer__title-about-us {
     text-align: center; } }
 
-.navbar__white {
+.navbar-white {
   background-color: #fff;
   -webkit-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
   padding: 21px 0; }
-  .navbar__white .top-menu .top-menu__active {
+  .navbar-white .top-menu .top-menu__active {
     background-color: #F88500;
     color: #fff;
     padding: 7px 15px 8px;
     border-radius: 0px 5px; }
-  .navbar__white .logo__link {
+  .navbar-white .logo__link {
     color: #171A1A; }
-    .navbar__white .logo__link span {
+    .navbar-white .logo__link span {
       opacity: 1; }
-  .navbar__white .top-menu__link {
+  .navbar-white .top-menu__link {
     color: #333; }
-    .navbar__white .top-menu__link:hover {
+    .navbar-white .top-menu__link:hover {
       background-color: #F88500;
       color: #fff; }
-    .navbar__white .top-menu__link:focus {
+    .navbar-white .top-menu__link:focus {
       background-color: #F88500;
       color: #fff; }
-  .navbar__white .nav-social-wrap .nav-social {
+  .navbar-white .nav-social-wrap .nav-social {
     background-color: unset; }
-    .navbar__white .nav-social-wrap .nav-social .nav-social__item img {
+    .navbar-white .nav-social-wrap .nav-social .nav-social__item img {
       opacity: 1; }
-      .navbar__white .nav-social-wrap .nav-social .nav-social__item img:hover {
+      .navbar-white .nav-social-wrap .nav-social .nav-social__item img:hover {
         opacity: .5; }
 
-.our__projects .our__projects-description {
+.our-projects .our-projects-description {
   padding: 70px 300px;
   text-align: center;
   font-family: "raleway-wt"; }
-  .our__projects .our__projects-description .our__projects-title {
+  .our-projects .our-projects-description .our-projects-title {
     font-weight: 900;
     font-size: 24px;
     line-height: 28px;
     color: #333333;
     text-transform: uppercase; }
-  .our__projects .our__projects-description p {
+  .our-projects .our-projects-description p {
     padding-top: 25px;
     color: #999999;
     font-weight: 400;
     font-size: 15px;
     line-height: 170%; }
 
-.our__projects .blocks__items {
+.our-projects .our-projects__blocks {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 3fr));
   grid-gap: 20px;
   padding: 0 320px 70px; }
-  .our__projects .blocks__items .item__image {
+  .our-projects .our-projects__blocks .our-projects__item__image {
     position: relative;
     cursor: pointer; }
-    .our__projects .blocks__items .item__image .hovereffect {
+    .our-projects .our-projects__blocks .our-projects__item__image .hovereffect {
       cursor: pointer;
       width: 100%;
       height: 100%;
@@ -1753,7 +1752,7 @@ span.top-menu__link {
       overflow: hidden;
       position: relative;
       text-align: center; }
-      .our__projects .blocks__items .item__image .hovereffect .overlay {
+      .our-projects .our-projects__blocks .our-projects__item__image .hovereffect .overlay {
         width: 100%;
         height: 100%;
         position: absolute;
@@ -1763,9 +1762,9 @@ span.top-menu__link {
         -webkit-transition: all 0.4s ease-in-out;
         -o-transition: all 0.4s ease-in-out;
         transition: all 0.4s ease-in-out; }
-        .our__projects .blocks__items .item__image .hovereffect .overlay:hover {
+        .our-projects .our-projects__blocks .our-projects__item__image .hovereffect .overlay:hover {
           background-color: transparent; }
-      .our__projects .blocks__items .item__image .hovereffect img {
+      .our-projects .our-projects__blocks .our-projects__item__image .hovereffect img {
         -webkit-transition: all 0.4s ease-in-out;
         -o-transition: all 0.4s ease-in-out;
         transition: all 0.4s ease-in-out;
@@ -1774,11 +1773,11 @@ span.top-menu__link {
         -webkit-transform: scale(1.1);
             -ms-transform: scale(1.1);
                 transform: scale(1.1); }
-        .our__projects .blocks__items .item__image .hovereffect img:hover {
+        .our-projects .our-projects__blocks .our-projects__item__image .hovereffect img:hover {
           -webkit-transform: scale(1);
               -ms-transform: scale(1);
                   transform: scale(1); }
-      .our__projects .blocks__items .item__image .hovereffect .info {
+      .our-projects .our-projects__blocks .our-projects__item__image .hovereffect .info {
         display: inline-block;
         text-decoration: none;
         text-transform: uppercase;
@@ -1801,53 +1800,53 @@ span.top-menu__link {
         top: 19px;
         left: 8%;
         padding: 67px 0; }
-        .our__projects .blocks__items .item__image .hovereffect .info:hover {
+        .our-projects .our-projects__blocks .our-projects__item__image .hovereffect .info:hover {
           opacity: 1;
           color: #000;
           -webkit-transform: scale(1);
               -ms-transform: scale(1);
                   transform: scale(1);
           background-color: #fff; }
-        .our__projects .blocks__items .item__image .hovereffect .info span {
+        .our-projects .our-projects__blocks .our-projects__item__image .hovereffect .info span {
           color: #999999;
           font-weight: 400;
           font-size: 13px;
           line-height: 170%; }
-        .our__projects .blocks__items .item__image .hovereffect .info h2 {
+        .our-projects .our-projects__blocks .our-projects__item__image .hovereffect .info h2 {
           color: #333;
           text-transform: uppercase;
           font-weight: 900;
           font-size: 18px;
           line-height: 21px; }
-        .our__projects .blocks__items .item__image .hovereffect .info a {
+        .our-projects .our-projects__blocks .our-projects__item__image .hovereffect .info a {
           color: #999999;
           -webkit-text-decoration-line: underline;
                   text-decoration-line: underline;
           font-weight: 800;
           font-size: 15px;
           line-height: 170%; }
-    .our__projects .blocks__items .item__image .hovereffect:hover img {
+    .our-projects .our-projects__blocks .our-projects__item__image .hovereffect:hover img {
       -webkit-transform: scale(1);
           -ms-transform: scale(1);
               transform: scale(1); }
-    .our__projects .blocks__items .item__image img {
+    .our-projects .our-projects__blocks .our-projects__item__image img {
       height: 230px;
       width: 100%;
       -o-object-fit: cover;
          object-fit: cover; }
-    .our__projects .blocks__items .item__image:nth-child(2n + 1) img {
+    .our-projects .our-projects__blocks .our-projects__item__image:nth-child(2n + 1) img {
       height: 482px;
       width: 100%;
       -o-object-fit: cover;
          object-fit: cover; }
-    .our__projects .blocks__items .item__image:nth-child(2n + 1) {
+    .our-projects .our-projects__blocks .our-projects__item__image:nth-child(2n + 1) {
       position: relative;
       cursor: pointer;
       grid-row-start: span 2;
       grid-row-end: span 2;
       padding: 0;
       margin: 0; }
-      .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect {
+      .our-projects .our-projects__blocks .our-projects__item__image:nth-child(2n + 1) .hovereffect {
         cursor: pointer;
         width: 100%;
         height: 100%;
@@ -1855,7 +1854,7 @@ span.top-menu__link {
         overflow: hidden;
         position: relative;
         text-align: center; }
-        .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect .overlay {
+        .our-projects .our-projects__blocks .our-projects__item__image:nth-child(2n + 1) .hovereffect .overlay {
           width: 100%;
           height: 100%;
           position: absolute;
@@ -1865,9 +1864,9 @@ span.top-menu__link {
           -webkit-transition: all 0.4s ease-in-out;
           -o-transition: all 0.4s ease-in-out;
           transition: all 0.4s ease-in-out; }
-          .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect .overlay:hover {
+          .our-projects .our-projects__blocks .our-projects__item__image:nth-child(2n + 1) .hovereffect .overlay:hover {
             background-color: transparent; }
-        .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect img {
+        .our-projects .our-projects__blocks .our-projects__item__image:nth-child(2n + 1) .hovereffect img {
           -webkit-transition: all 0.4s ease-in-out;
           -o-transition: all 0.4s ease-in-out;
           transition: all 0.4s ease-in-out;
@@ -1876,11 +1875,11 @@ span.top-menu__link {
           -webkit-transform: scale(1.1);
               -ms-transform: scale(1.1);
                   transform: scale(1.1); }
-          .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect img:hover {
+          .our-projects .our-projects__blocks .our-projects__item__image:nth-child(2n + 1) .hovereffect img:hover {
             -webkit-transform: scale(1);
                 -ms-transform: scale(1);
                     transform: scale(1); }
-        .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect .info {
+        .our-projects .our-projects__blocks .our-projects__item__image:nth-child(2n + 1) .hovereffect .info {
           display: inline-block;
           text-decoration: none;
           text-transform: uppercase;
@@ -1903,72 +1902,72 @@ span.top-menu__link {
           top: 0;
           left: 8%;
           padding: 185px 0 0; }
-          .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect .info:hover {
+          .our-projects .our-projects__blocks .our-projects__item__image:nth-child(2n + 1) .hovereffect .info:hover {
             opacity: 1;
             color: #000;
             -webkit-transform: scale(1);
                 -ms-transform: scale(1);
                     transform: scale(1);
             background-color: #fff; }
-          .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect .info span {
+          .our-projects .our-projects__blocks .our-projects__item__image:nth-child(2n + 1) .hovereffect .info span {
             color: #999999;
             font-weight: 400;
             font-size: 13px;
             line-height: 170%; }
-          .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect .info h2 {
+          .our-projects .our-projects__blocks .our-projects__item__image:nth-child(2n + 1) .hovereffect .info h2 {
             color: #333;
             text-transform: uppercase;
             font-weight: 900;
             font-size: 18px;
             line-height: 21px; }
-          .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect .info a {
+          .our-projects .our-projects__blocks .our-projects__item__image:nth-child(2n + 1) .hovereffect .info a {
             color: #999999;
             -webkit-text-decoration-line: underline;
                     text-decoration-line: underline;
             font-weight: 800;
             font-size: 15px;
             line-height: 170%; }
-      .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect:hover img {
+      .our-projects .our-projects__blocks .our-projects__item__image:nth-child(2n + 1) .hovereffect:hover img {
         -webkit-transform: scale(1);
             -ms-transform: scale(1);
                 transform: scale(1); }
 
 @media (max-width: 1450px) {
-  .our__projects .blocks__items {
+  .our-projects .our-projects__blocks {
     padding: 0 220px 70px; }
-  .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect img {
+  .our-projects .our-projects__blocks .our-projects__item__image:nth-child(2n + 1) .hovereffect img {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1); }
-  .our__projects .blocks__items .item__image .hovereffect img {
+  .our-projects .our-projects__blocks .our-projects__item__image .hovereffect img {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1); } }
 
 @media (max-width: 1200px) {
-  .our__projects .blocks__items {
+  .our-projects .our-projects__blocks {
     padding: 0 21px 70px; } }
 
 @media (max-width: 991px) {
-  .our__projects .our__projects-description {
+  .our-projects .our-projects-description {
     padding: 70px 0px; } }
 
 @media (max-width: 600px) {
-  .our__projects .blocks__items .item__image img {
+  .our-projects .our-projects__blocks .our-projects__item__image img {
     height: 375px;
     max-height: 375px; }
-  .our__projects .blocks__items .item__image:nth-child(2n + 1) img {
+  .our-projects .our-projects__blocks .our-projects__item__image:nth-child(2n + 1) img {
     height: 375px;
     max-height: 375px; }
-  .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect .info {
+  .our-projects .our-projects__blocks .our-projects__item__image:nth-child(2n + 1) .hovereffect .info {
     padding: 133px 0 0;
     height: 87%; }
-  .our__projects .blocks__items .item__image .hovereffect .info {
+  .our-projects .our-projects__blocks .our-projects__item__image .hovereffect .info {
     padding: 133px 0 0;
     height: 87%; } }
 
 @media (max-width: 425px) {
-  .our__projects .blocks__items {
+  .our-projects .our-projects__blocks {
     grid-template-columns: repeat(auto-fit, minmax(100%, 3fr)); } }
 
 .project {

@@ -1,7 +1,7 @@
-@import 'variables'; 
-@import 'base';      
-@import 'fonts';     
-           
+@import 'variables';
+@import 'base';
+@import 'fonts';
+
 ///             HomePage                                                 
 @import "components/modal";
 @import "components/navbar";
@@ -13,8 +13,7 @@
 @import "components/our-blog";
 @import "components/footer";
 
-
-///Projects                
+///Projects                      
 @import "components/menu-white";
 @import "components/our-projects";
 @import "components/project";

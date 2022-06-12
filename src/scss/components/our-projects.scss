@@ -1,9 +1,9 @@
-.our__projects{
-    .our__projects-description{
+.our-projects{
+    .our-projects-description{
         padding: 70px 300px;
         text-align: center;
         font-family: "raleway-wt";
-        .our__projects-title{
+        .our-projects-title{
             font-weight: 900;
             font-size: 24px;
             line-height: 28px;
@@ -18,14 +18,14 @@
             line-height: 170%;
         }
     }
-    .blocks__items{
+    .our-projects__blocks{
         display: grid;
         // grid-template-columns: 360px 360px 360px;
         // grid-template-columns: repeat(3, 1fr);
         grid-template-columns: repeat(auto-fit, minmax(360px, 3fr));
         grid-gap: 20px;
         padding: 0 320px 70px;
-        .item__image{
+        .our-projects__item__image{
             position: relative;
             cursor: pointer;
             .hovereffect {
@@ -217,54 +217,54 @@
 }
 
 @media(max-width: 1450px){
-    .our__projects .blocks__items{
+    .our-projects .our-projects__blocks{
         padding: 0 220px 70px;
     }
-    .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect img{
+    .our-projects .our-projects__blocks .our-projects__item__image:nth-child(2n + 1) .hovereffect img{
         transform: scale(1);
     }
-    .our__projects .blocks__items .item__image .hovereffect img{
+    .our-projects .our-projects__blocks .our-projects__item__image .hovereffect img{
         transform: scale(1);
     }
 }
 @media(max-width: 1200px){
-    .our__projects .blocks__items{
+    .our-projects .our-projects__blocks{
         padding: 0 21px 70px;
     }
 }
 @media(max-width: 991px){
-    .our__projects .our__projects-description{
+    .our-projects .our-projects-description{
         padding: 70px 0px;
     }
 }
 
 @media(max-width: 600px){
-    .our__projects .blocks__items .item__image img{
+    .our-projects .our-projects__blocks .our-projects__item__image img{
         height: 375px;
         max-height: 375px;
     }
-    .our__projects .blocks__items .item__image:nth-child(2n + 1) img{
+    .our-projects .our-projects__blocks .our-projects__item__image:nth-child(2n + 1) img{
         height: 375px;
         max-height: 375px;
     }
-    .our__projects .blocks__items .item__image:nth-child(2n + 1) .hovereffect .info{
+    .our-projects .our-projects__blocks .our-projects__item__image:nth-child(2n + 1) .hovereffect .info{
         padding: 133px 0 0;
         height: 87%;
     }
-    .our__projects .blocks__items .item__image .hovereffect .info{
+    .our-projects .our-projects__blocks .our-projects__item__image .hovereffect .info{
         padding: 133px 0 0;
         height: 87%;
     }
 }
 @media(max-width: 425px){
-    // .our__projects .blocks__items{
+    // .our-projects .our-projects__blocks{
     //     margin: 0 21px 70px;
     // }
-    // .our__projects .blocks__items .item__image img{
+    // .our-projects .our-projects__blocks .our-projects__item__image img{
     //     margin: 0 auto;
     //     max-width: 100%;
     // }
-    .our__projects .blocks__items{
+    .our-projects .our-projects__blocks{
         grid-template-columns: repeat(auto-fit, minmax(100%, 3fr));
     }
     
