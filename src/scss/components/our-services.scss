@@ -1,10 +1,12 @@
-.our-services{
+.our-services {
     margin-top: 70px;
-    .text__our-services{
+
+    .our-services__text {
         text-align: center;
         margin: 0 auto;
         padding: 0 281px;
-        h1{
+
+        h1 {
             padding-bottom: 40px;
             font-family: $userfont;
             text-align: center;
@@ -16,18 +18,21 @@
             text-transform: uppercase;
         }
     }
-    .field__search {
+
+    .our-services__field-search {
         display: flex;
         justify-content: center;
     }
-    .row{
+
+    .row {
         margin: 0 auto;
         margin-top: 50px;
         margin-bottom: 120px;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(550px, 2fr));
         grid-gap: 20px;
-        .item__service{
+
+        .our-services__item__service {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -35,7 +40,8 @@
             box-sizing: border-box;
             margin: 0 20px;
             position: relative;
-            &:hover::after{
+
+            &:hover::after {
                 content: "";
                 background-color: $accent;
                 width: 3px;
@@ -45,35 +51,41 @@
                 left: 0;
             }
         }
-        .item__img{
+
+        .our-services-item-img {
             text-align: right;
             flex: 1;
         }
-        .item__text{
+
+        .our-services__item__text {
             flex: 1;
             padding: 38px 30px;
             text-align: left;
-            .title{
+
+            .title {
                 font-family: $userfont;
                 text-transform: uppercase;
                 font-weight: 800;
                 font-size: 18px;
                 line-height: 21px;
                 transition: .3s;
-               cursor: pointer;
-                &:hover{
+                cursor: pointer;
+
+                &:hover {
                     color: $accent;
                     text-decoration-line: underline;
                 }
             }
+
             p {
                 padding-top: 15px;
                 margin: unset;
             }
-          
+
         }
     }
-    .load__more{
+
+    .our-services__load__more {
         margin: 0 auto;
         text-align: center;
         display: flex;
@@ -96,32 +108,36 @@
     }
 }
 
-@media(max-width: 991px){
-    .our-services .text__our-services{
+@media(max-width: 991px) {
+    .our-services .our-services__text {
         padding: 0;
     }
 }
 
 @media(max-width: 768px) {
-    .our-services .row{
+    .our-services .row {
         grid-template-columns: repeat(auto-fill, minmax(510px, 2fr));
     }
-    .our-services .row .item__service{
+
+    .our-services .row .our-services__item__service {
         margin: 0;
     }
-    .our-services .row .item__text{
+
+    .our-services .row .item__text {
         padding: 0;
     }
 }
 
-@media(max-width: 555px){
-    .our-services .row .item__service {
+@media(max-width: 555px) {
+    .our-services .row .our-services__item__service {
         margin: 0 auto;
         flex-direction: column;
     }
-    .our-services .row .item__text{
+
+    .our-services .row .item__text {
         text-align: center;
     }
+
     .our-services .row {
         grid-template-columns: repeat(auto-fill, minmax(100%, 2fr));
     }

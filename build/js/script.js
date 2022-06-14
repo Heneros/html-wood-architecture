@@ -10535,7 +10535,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var url = "../data.json";
   $.getJSON(url, function (data) {
     var posts = data.map(function (item) {
-      return "<div class='item__service'><div class='item__text'><span class='title'>" + item.name + "</span><p>" + item.description + "</p></div><div class='item__img'><img src='" + item.image + "'></div></div>";
+      return "<div class='our-services__item__service'><div class='our-services__item__text'><span class='title'>" + item.name + "</span><p>" + item.description + "</p></div><div class='our-services-item-img'><img src='" + item.image + "'></div></div>";
     });
 
     if (posts.length) {
@@ -10554,7 +10554,7 @@ document.addEventListener('DOMContentLoaded', function () {
     $.getJSON('../data.json', function (data) {
       $.each(data, function (key, value) {
         if (value.name.search(expression) != -1 || value.description.search(expression) != -1) {
-          $('#items__service').append("<div class='item__service'><div class='item__text'><span class='title'>" + value.name + "</span><p>" + value.description + "</p></div><div class='item__img'><img src='" + value.image + "'></div></div>");
+          $('#items__service').append("<div class='our-services__item__service'><div class='our-services__item__text'><span class='title'>" + value.name + "</span><p>" + value.description + "</p></div><div class='our-services-item-img'><img src='" + value.image + "'></div></div>");
         }
       });
     });
