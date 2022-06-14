@@ -19,17 +19,17 @@
                 padding: 0 6px;
                 text-decoration: underline;
             }
-            .triangle__left{
+            .triangle-left{
                 text-decoration: none;
             }
-            .triangle__left::after{
+            .triangle-left::after{
                 content: ">";
                 left: 0px;
                 position: relative;
                 text-decoration: none;
                 color: #CCCCCC;
             }
-            .active__breadcrumb{
+            .active-breadcrumb{
             color: #888888;
             font-weight: 700;
             font-size: 14px;
@@ -129,7 +129,7 @@
         font-size: 12px;
         line-height: 2;
     }
-    .project .breadcrumbs ul li .active__breadcrumb{
+    .project .breadcrumbs ul li .active-breadcrumb{
         font-size: 12px;
     }
     .project .breadcrumbs{

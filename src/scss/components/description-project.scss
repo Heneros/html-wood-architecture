@@ -1,34 +1,39 @@
-.description__project{
+.description-project {
     margin-top: 55px;
     font-family: $userfont;
-    .main_title__description-project{
-            color: $text;
-            font-weight: 800;
-            font-size: 30px;
-            line-height: 35px;
-            text-align: center;
-            padding-bottom: 50px;
+
+    .description-project__main-title {
+        color: $text;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+        padding-bottom: 50px;
     }
-    .project__content{
-        p{
+
+    .description-project__content {
+        p {
             font-weight: 400;
             font-size: 16px;
             line-height: 170%;
             color: $text;
             padding: 40px 0;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
-    img{
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
-    }
-    }
-    .excerpt__project{
+
+    .description-project__excerpt {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 21px;
-        .title__excerpt-project{
+
+        .description-project__title__excerpt {
             color: $text;
             font-size: 16px;
             line-height: 18px;
@@ -41,10 +46,11 @@
             justify-content: center;
         }
 
- 
+
     }
-    .about__architect{
-        .title__name-project{
+
+    .description-project__about-architect {
+        .description-project__title-name {
             margin-top: 25px;
             margin-bottom: 15px;
             display: flex;
@@ -55,20 +61,23 @@
             font-weight: 800;
             font-family: "raleway-wt";
         }
-        p{
+
+        p {
             max-width: 286px;
             text-align: center;
         }
-        img{
+
+        img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
-    .info__list{
-        p{
-            .attribute{
-                &:after{
+
+    .description-project__info-list {
+        p {
+            .attribute {
+                &:after {
                     content: "...............................................";
                 }
             }
@@ -76,21 +85,25 @@
     }
 }
 
-.container__description{
+.container__description {
     display: flex;
     flex-direction: row;
 }
-@media(max-width: 1020px){
-    .container__description{
+
+@media(max-width: 1020px) {
+    .container__description {
         flex-direction: column-reverse;
     }
-    .container__description .col-md-4{
-      width: 100%;
+
+    .container__description .col-md-4 {
+        width: 100%;
     }
-    .description__project .about__architect p{
+
+    .description-project .description-project__about-architect p {
         max-width: 100%;
     }
-    .container__description .col-md-8{
+
+    .container__description .col-md-8 {
         width: 100%;
     }
 }
