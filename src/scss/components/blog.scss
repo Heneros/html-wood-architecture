@@ -1,11 +1,11 @@
-.blog__company{
+.blog-company{
     margin-top: 82px;
     margin-bottom: 70px;
-    .description__main-blog{
+    .blog-company__description__main{
         padding: 0px 300px;
         text-align: center;
         font-family: "raleway-wt";
-        .main__blog-title{
+        .blog-company__main-title{
             font-weight: 900;
             font-size: 24px;
             line-height: 28px;
@@ -129,22 +129,22 @@
 
  
 @media(max-width: 991px){
-    .blog__company .main__blog .item__blog .image__blog img{
+    .blog-company .main__blog .item__blog .image__blog img{
         height: 100%;
     }
-    .blog__company .description__main-blog{
+    .blog-company .blog-company__description__main{
         padding: 15px 0px;
     }
 }
 
 @media(max-width: 405px){
-    .blog__company .main__blog{
+    .blog-company .main__blog{
         grid-template-columns: repeat(auto-fit, minmax(260px, 3fr));
     }
-    .blog__company .pagination .number__pagination{
+    .blog-company .pagination .number__pagination{
         margin: 0;
     }
-    .blog__company .pagination .number__pagination a{
+    .blog-company .pagination .number__pagination a{
         padding: 12px;
     }
 }
