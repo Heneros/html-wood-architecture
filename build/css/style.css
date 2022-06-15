@@ -2336,22 +2336,22 @@ span.top-menu__link {
       font-weight: 400;
       font-size: 15px;
       line-height: 170%; }
-  .blog-company .main__blog {
+  .blog-company .blog-company__main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 3fr));
     grid-gap: 20px; }
-    .blog-company .main__blog .item__blog {
+    .blog-company .blog-company__main .blog-company__item {
       border: 1px solid #EEEEEE;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       border-radius: 0px 5px; }
-      .blog-company .main__blog .item__blog .image__blog {
+      .blog-company .blog-company__main .blog-company__item .blog-company__image {
         border-radius: 0px 5px;
         position: relative; }
-        .blog-company .main__blog .item__blog .image__blog img {
+        .blog-company .blog-company__main .blog-company__item .blog-company__image img {
           width: 100%;
           height: 210px; }
-        .blog-company .main__blog .item__blog .image__blog .date__item-blog {
+        .blog-company .blog-company__main .blog-company__item .blog-company__image .blog-company__date {
           position: absolute;
           top: 14px;
           left: 20px;
@@ -2364,7 +2364,7 @@ span.top-menu__link {
           font-size: 15px;
           line-height: 10px;
           text-transform: uppercase; }
-      .blog-company .main__blog .item__blog .title__blog-item {
+      .blog-company .blog-company__main .blog-company__item .blog-company__title {
         color: #333;
         font-family: 'raleway-wt';
         font-weight: 800;
@@ -2376,7 +2376,7 @@ span.top-menu__link {
         padding-bottom: 17px;
         position: relative;
         cursor: pointer; }
-        .blog-company .main__blog .item__blog .title__blog-item::after {
+        .blog-company .blog-company__main .blog-company__item .blog-company__title::after {
           content: "";
           position: absolute;
           left: 0;
@@ -2384,13 +2384,13 @@ span.top-menu__link {
           height: 42px;
           width: 3px;
           background-color: #F88500; }
-      .blog-company .main__blog .item__blog .description__blog {
+      .blog-company .blog-company__main .blog-company__item .blog-company__description {
         font-family: 'raleway-wt';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 170%; }
-      .blog-company .main__blog .item__blog .full__story {
+      .blog-company .blog-company__main .blog-company__item .full-story {
         padding-top: 13px;
         color: #333;
         font-family: 'raleway-wt';
@@ -2410,7 +2410,7 @@ span.top-menu__link {
     margin-top: 50px;
     font-family: raleway-wt, sans-serif, Arial;
     font-size: 15px; }
-    .blog-company .pagination .btn__pagination {
+    .blog-company .pagination .btn-pagination {
       outline: none;
       border: none;
       background-color: unset;
@@ -2418,13 +2418,13 @@ span.top-menu__link {
       -o-transition: .3s;
       transition: .3s;
       position: relative; }
-      .blog-company .pagination .btn__pagination:hover {
+      .blog-company .pagination .btn-pagination:hover {
         -webkit-text-decoration-line: underline;
                 text-decoration-line: underline;
         color: #F88500; }
-    .blog-company .pagination .number__pagination {
+    .blog-company .pagination .number-pagination {
       margin: 0 5px; }
-      .blog-company .pagination .number__pagination a {
+      .blog-company .pagination .number-pagination a {
         text-decoration: none;
         color: #C4C4C4;
         font-weight: 600;
@@ -2434,22 +2434,22 @@ span.top-menu__link {
         -o-transition: .5s;
         transition: .5s;
         padding: 15px; }
-        .blog-company .pagination .number__pagination a:hover {
+        .blog-company .pagination .number-pagination a:hover {
           color: #fff;
           background-color: #F88500; }
 
 @media (max-width: 991px) {
-  .blog-company .main__blog .item__blog .image__blog img {
+  .blog-company .blog-company__main .blog-company__item .blog-company__image img {
     height: 100%; }
   .blog-company .blog-company__description__main {
     padding: 15px 0px; } }
 
 @media (max-width: 405px) {
-  .blog-company .main__blog {
+  .blog-company .blog-company__main {
     grid-template-columns: repeat(auto-fit, minmax(260px, 3fr)); }
-  .blog-company .pagination .number__pagination {
+  .blog-company .pagination .number-pagination {
     margin: 0; }
-  .blog-company .pagination .number__pagination a {
+  .blog-company .pagination .number-pagination a {
     padding: 12px; } }
 
 .blog__post {

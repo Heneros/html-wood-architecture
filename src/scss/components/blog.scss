@@ -20,22 +20,22 @@
             line-height: 170%;
         }
     }
-    .main__blog{
+    .blog-company__main{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(360px, 3fr));
         grid-gap: 20px;
-        .item__blog{
+        .blog-company__item{
             border: 1px solid #EEEEEE;
             box-sizing: border-box;
             border-radius: 0px 5px;
-    .image__blog{
+    .blog-company__image{
         border-radius: 0px 5px;
         position: relative;
         img{
             width: 100%;
             height: 210px;
         }
-        .date__item-blog{
+        .blog-company__date{
             position: absolute;
             top: 14px;
             left: 20px;
@@ -50,7 +50,7 @@
             text-transform: uppercase;
         }
     }
-    .title__blog-item{
+    .blog-company__title{
         color: #333;
         font-family: 'raleway-wt';
         font-weight: 800;
@@ -72,14 +72,14 @@
             background-color: $accent;
         }
     }
-    .description__blog{
+    .blog-company__description{
     font-family: 'raleway-wt';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 170%;
     }
-    .full__story{
+    .full-story{
     padding-top: 13px;
     color: #333;
     font-family: 'raleway-wt';
@@ -97,7 +97,7 @@
         margin-top: 50px;
         font-family: $userfont;
         font-size: 15px;
-        .btn__pagination{
+        .btn-pagination{
             outline: none;
             border: none;
             background-color: unset;
@@ -108,7 +108,7 @@
                  color: $accent;
             }
         }
-        .number__pagination{
+        .number-pagination{
             margin: 0 5px;
             a{
             text-decoration: none;
@@ -129,7 +129,7 @@
 
  
 @media(max-width: 991px){
-    .blog-company .main__blog .item__blog .image__blog img{
+    .blog-company .blog-company__main .blog-company__item .blog-company__image img{
         height: 100%;
     }
     .blog-company .blog-company__description__main{
@@ -138,13 +138,13 @@
 }
 
 @media(max-width: 405px){
-    .blog-company .main__blog{
+    .blog-company .blog-company__main{
         grid-template-columns: repeat(auto-fit, minmax(260px, 3fr));
     }
-    .blog-company .pagination .number__pagination{
+    .blog-company .pagination .number-pagination{
         margin: 0;
     }
-    .blog-company .pagination .number__pagination a{
+    .blog-company .pagination .number-pagination a{
         padding: 12px;
     }
 }
