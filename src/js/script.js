@@ -142,26 +142,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   $(".js-tabs-head-item").on('click', function () {
-    if (!$(this).hasClass("active__show")) {
+    if (!$(this).hasClass("active-show")) {
       let btns = $(this).closest(".js-tabs").find(".js-tabs-head-item");
       let count;
       $(btns).each(function () {
-        $(this).removeClass("active__show");
+        $(this).removeClass("active-show");
       })
-      $(this).addClass("active__show");
+      $(this).addClass("active-show");
       $(btns).each(function (index) {
-        if ($(this).hasClass("active__show")) {
+        if ($(this).hasClass("active-show")) {
           count = index;
         }
       })
       let blocks = $('.js-tabs-body').find('.js-tabs-body-item');
       $(blocks).each(function (index) {
         if (index == count) {
-          $(this).addClass("active__show");
-          $(".feedback__bottom").addClass("active__show")
+          $(this).addClass("active-show");
+          $(".feedback-bottom").addClass("active-show")
         } else {
-          $(this).removeClass("active__show");
-          $(".feedback__bottom").removeClass("active__show")
+          $(this).removeClass("active-show");
+          $(".feedback-bottom").removeClass("active-show")
         }
       })
     }

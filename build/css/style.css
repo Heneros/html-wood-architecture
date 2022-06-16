@@ -1268,7 +1268,7 @@ span.top-menu__link {
     line-height: 34px;
     color: #fff;
     padding-top: 78px; }
-  .our-partners .our-partners__items {
+  .our-partners .our-our-partners__items {
     margin: 57px 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1288,7 +1288,7 @@ span.top-menu__link {
         -ms-flex-align: center;
             align-items: center;
     position: relative; }
-    .our-partners .our-partners__item .our-partners-image {
+    .our-partners .our-partners__item .our-partners -image {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1296,7 +1296,7 @@ span.top-menu__link {
           -ms-flex-pack: center;
               justify-content: center;
       padding-bottom: 22px; }
-      .our-partners .our-partners__item .our-partners-image img {
+      .our-partners .our-partners__item .our-partners -image img {
         max-width: 156px;
         height: 55px;
         -o-object-fit: fill;
@@ -1312,7 +1312,7 @@ span.top-menu__link {
       font-weight: 800; }
 
 @media (max-width: 765px) {
-  .our-partners .our-partners__items {
+  .our-partners .our-our-partners__items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2494,37 +2494,37 @@ span.top-menu__link {
 
 .company {
   margin-top: 70px; }
-  .company .main__title-company {
+  .company .company__main-title {
     font-family: raleway-wt, sans-serif, Arial;
     color: #333;
     font-weight: 800;
     font-size: 30px;
     line-height: 35px;
     padding-bottom: 25px; }
-  .company .image__container {
+  .company .image-container {
     padding: 35px 0; }
-    .company .image__container img {
+    .company .image-container img {
       width: 100%;
       height: 100%;
       -o-object-fit: contain;
          object-fit: contain; }
-  .company .tabs__items {
+  .company .tabs-items {
     font-family: raleway-wt, sans-serif, Arial; }
-    .company .tabs__items .title__tabs {
+    .company .tabs-items .title-tabs {
       padding-left: 28px;
       font-weight: 800;
       font-size: 16px;
       line-height: 19px;
       text-transform: uppercase; }
-    .company .tabs__items ul {
+    .company .tabs-items ul {
       list-style-type: none;
       padding: 0; }
-      .company .tabs__items ul li {
+      .company .tabs-items ul li {
         margin: 21px 0; }
-        .company .tabs__items ul li .active__show {
+        .company .tabs-items ul li .active-show {
           background-color: #F88500;
           color: #fff; }
-      .company .tabs__items ul .item__tab {
+      .company .tabs-items ul .item-tab {
         margin: 21px 0;
         font-weight: 500;
         font-size: 14px;
@@ -2537,45 +2537,45 @@ span.top-menu__link {
         transition: .3s;
         cursor: pointer;
         white-space: nowrap; }
-        .company .tabs__items ul .item__tab:hover {
+        .company .tabs-items ul .item-tab:hover {
           background-color: #F88500;
           color: #fff; }
-  .company .about__company {
+  .company .about-company {
     display: none; }
-  .company .our__partners {
+  .company .our-partners {
     display: none; }
-  .company .advantages__block {
+  .company .advantages-block {
     display: none; }
-  .company .contact__us {
+  .company .contact-us {
     display: none; }
-  .company .active__show {
+  .company .feedback-bottom {
+    display: none; }
+  .company .active-show {
     display: block; }
-  .company .feedback__bottom {
-    display: none; }
-  .company .feedback__bottom.active__show {
+  .company .feedback-bottom.active-show {
     display: block; }
   .company .active__feedback {
     display: block; }
   .company aside ul li .active {
     background-color: #F88500;
     color: #fff !important; }
-  .company .title__advantages {
+  .company .advantages-title {
     text-align: center;
     font-family: raleway-wt, sans-serif, Arial;
     color: #333;
     font-weight: 800;
     font-size: 30px;
     line-height: 35px; }
-  .company .advantage__items {
+  .company .advantage-items {
     font-family: raleway-wt, sans-serif, Arial;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(253px, 3fr));
     margin-top: 60px; }
-    .company .advantage__items .advantage__item {
+    .company .advantage-items .advantage-item {
       text-align: center;
       border-bottom: 1px solid #E7E7E8;
       margin: 45px 20px; }
-      .company .advantage__items .advantage__item .advantage__item-title {
+      .company .advantage-items .advantage-item .advantage-item-title {
         font-weight: 800;
         font-size: 19px;
         line-height: 22px;
@@ -2585,14 +2585,14 @@ span.top-menu__link {
         -o-transition: .3s;
         transition: .3s;
         cursor: pointer; }
-        .company .advantage__items .advantage__item .advantage__item-title:hover {
+        .company .advantage-items .advantage-item .advantage-item-title:hover {
           color: #F88500;
           -webkit-text-decoration-line: underline;
                   text-decoration-line: underline; }
-      .company .advantage__items .advantage__item p {
+      .company .advantage-items .advantage-item p {
         text-align: center;
         padding: 0px 20px; }
-      .company .advantage__items .advantage__item .read__more {
+      .company .advantage-items .advantage-item .read-more {
         -webkit-text-decoration-line: underline;
                 text-decoration-line: underline;
         color: #333;
@@ -2603,15 +2603,15 @@ span.top-menu__link {
         -o-transition: .3s;
         transition: .3s;
         cursor: pointer; }
-        .company .advantage__items .advantage__item .read__more:hover {
+        .company .advantage-items .advantage-item .read-more:hover {
           color: #F88500; }
-  .company .our__partners .main__title-partners {
+  .company .our-partners .our-partners__main-title {
     font-family: raleway-wt, sans-serif, Arial;
     color: #333;
     font-weight: 800;
     font-size: 30px;
     line-height: 35px; }
-  .company .our__partners .partners__items {
+  .company .our-partners .our-partners__items {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2620,7 +2620,7 @@ span.top-menu__link {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 70px; }
-  .company .our__partners .partner__item {
+  .company .our-partners .partner-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2629,23 +2629,23 @@ span.top-menu__link {
         -ms-flex-direction: row;
             flex-direction: row;
     padding: 40px 0; }
-    .company .our__partners .partner__item .title__partner {
+    .company .our-partners .partner-item .partner-title {
       color: #F88500;
       font-family: raleway-wt, sans-serif, Arial;
       font-weight: 800;
       font-size: 22px;
       line-height: 26px; }
-    .company .our__partners .partner__item p {
+    .company .our-partners .partner-item p {
       padding-top: 20px;
       color: #333; }
-    .company .our__partners .partner__item .text {
+    .company .our-partners .partner-item .text {
       padding-left: 20px; }
-  .company .contact__us .text__contact-us {
+  .company .contact-us .contact-us__text {
     text-align: center;
     margin: 0 auto;
     padding: 0 105px;
     text-transform: uppercase; }
-    .company .contact__us .text__contact-us .main__title-contact {
+    .company .contact-us .contact-us__text .contact-us__main-title {
       font-family: raleway-wt, sans-serif, Arial;
       color: #333;
       font-weight: 800;
@@ -2654,29 +2654,29 @@ span.top-menu__link {
       text-align: center;
       padding-bottom: 30px;
       display: block; }
-    .company .contact__us .text__contact-us p {
+    .company .contact-us .contact-us__text p {
       color: #999999;
       text-transform: none; }
-  .company .contact__us .contact__us-block {
+  .company .contact-us .contact-us-block {
     padding: 0 302px; }
-    .company .contact__us .contact__us-block textarea {
+    .company .contact-us .contact-us-block textarea {
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s;
       resize: none; }
-      .company .contact__us .contact__us-block textarea:active {
+      .company .contact-us .contact-us-block textarea:active {
         border: 1px solid #F88500; }
-      .company .contact__us .contact__us-block textarea:focus {
+      .company .contact-us .contact-us-block textarea:focus {
         border: 1px solid #F88500; }
-    .company .contact__us .contact__us-block input {
+    .company .contact-us .contact-us-block input {
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s; }
-      .company .contact__us .contact__us-block input:active {
+      .company .contact-us .contact-us-block input:active {
         border: 1px solid #F88500; }
-      .company .contact__us .contact__us-block input:focus {
+      .company .contact-us .contact-us-block input:focus {
         border: 1px solid #F88500; }
-    .company .contact__us .contact__us-block .btn__contact-us {
+    .company .contact-us .contact-us-block .contact-us__btn {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -2696,10 +2696,10 @@ span.top-menu__link {
       border: unset;
       outline: unset;
       cursor: pointer; }
-  .company .feedback__bottom {
+  .company .feedback-bottom {
     background-color: #202328;
     width: 100%; }
-    .company .feedback__bottom .information__bottom {
+    .company .feedback-bottom .information-bottom {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -2713,24 +2713,24 @@ span.top-menu__link {
       padding: 70px 0 40px 0;
       margin: 0 auto;
       text-align: center; }
-    .company .feedback__bottom .title__bottom {
+    .company .feedback-bottom .title-bottom {
       font-weight: 800;
       font-size: 29px;
       line-height: 34px;
       color: #fff; }
-    .company .feedback__bottom address {
+    .company .feedback-bottom address {
       font-weight: 400;
       font-size: 15px;
       line-height: 170%;
       color: #989DA5;
       padding-top: 30px; }
-    .company .feedback__bottom .phone__num {
+    .company .feedback-bottom .phone-num {
       font-weight: 300;
       font-size: 28px;
       line-height: 165%;
       color: #fff;
       text-decoration: none; }
-    .company .feedback__bottom .map__contact-us {
+    .company .feedback-bottom .contact-us__map {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -2742,76 +2742,76 @@ span.top-menu__link {
               align-items: center;
       margin: 0 173px;
       padding-bottom: 100px; }
-      .company .feedback__bottom .map__contact-us iframe {
+      .company .feedback-bottom .contact-us__map iframe {
         width: 100%; }
-  .company .about__company {
+  .company .about-company {
     margin-bottom: 66px; }
-  .company .advantages__block {
+  .company .advantages-block {
     margin-bottom: 66px; }
-  .company .our__partners {
+  .company .our-partners {
     margin-bottom: 66px; }
 
 @media (max-width: 1400px) {
-  .company .tabs__items ul .item__tab {
+  .company .tabs-items ul .item-tab {
     padding: 10px 90px 10px 28px; }
-  .company .contact__us .contact__us-block {
+  .company .contact-us .contact-us-block {
     padding: 0 102px; } }
 
 @media (max-width: 1200px) {
-  .company .tabs__items .title__tabs {
+  .company .tabs-items .title-tabs {
     padding-left: unset; } }
 
 @media (max-width: 991px) {
-  .company .advantage__items {
+  .company .advantage-items {
     grid-template-columns: repeat(auto-fill, minmax(582px, 1fr)); }
-  .company .tabs__items ul .item__tab {
+  .company .tabs-items ul .item-tab {
     padding: 10px 28px 10px 28px; }
-  .company .our__partners .partner__item {
+  .company .our-partners .partner-item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-  .company .our__partners .partner__item .text {
+  .company .our-partners .partner-item .text {
     padding-left: unset; }
-  .company .our__partners .partner__item .logo__partner {
+  .company .our-partners .partner-item .partener-logo {
     margin: 0 auto; }
-  .company .our__partners .partner__item .title__partner {
+  .company .our-partners .partner-item .partner-title {
     text-align: center;
     display: block;
     padding-top: 25px; }
-  .company .our__partners .partner__item p {
+  .company .our-partners .partner-item p {
     text-align: center; }
-  .company .contact__us .contact__us-block {
+  .company .contact-us .contact-us-block {
     padding: 0; }
-  .company .contact__us .text__contact-us {
+  .company .contact-us .contact-us__text {
     padding: 0; }
-  .company .tabs__items .title__tabs {
+  .company .tabs-items .title-tabs {
     white-space: nowrap;
     font-size: 13px; }
-  .company .feedback__bottom .map__contact-us {
+  .company .feedback-bottom .contact-us__map {
     margin: 0 20px; } }
 
 @media (max-width: 765px) {
-  .company .advantage__items {
+  .company .advantage-items {
     grid-template-columns: unset; }
-  .company .tabs__items ul {
+  .company .tabs-items ul {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     overflow-x: auto;
     width: 100%; }
-  .company .tabs__items ul .item__tab {
+  .company .tabs-items ul .item-tab {
     padding: 10px 28px 10px 28px;
     margin: -5px 0px; }
-  .company .contact__us {
+  .company .contact-us {
     margin-top: 25px; }
-  .company .our__partners {
+  .company .our-partners {
     margin-top: 25px; }
-  .company .advantages__block {
+  .company .advantages-block {
     margin-top: 25px; }
-  .company .about__company {
+  .company .about-company {
     margin-top: 25px; }
-  .company .tabs__items ul li {
+  .company .tabs-items ul li {
     margin: 21px 5px; } }
 
 /**

@@ -14,7 +14,7 @@
         padding-top: 78px;
     }
 
-    .our-partners__items {
+    .our-our-partners__items {
         margin: 57px 0;
         display: flex;
     }
@@ -26,7 +26,7 @@
         align-items: center;
         position: relative;
 
-        .our-partners-image {
+        .our-partners -image {
             display: flex;
             justify-content: center;
             padding-bottom: 22px;
@@ -55,7 +55,7 @@
 }
 
 @media(max-width: 765px) {
-    .our-partners .our-partners__items {
+    .our-partners .our-our-partners__items {
         flex-direction: column;
         align-items: center;
     }
